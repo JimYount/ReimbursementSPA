@@ -1,1 +1,8 @@
+<<<<<<< HEAD
 Hello, my name is Alex Lohse. ~ Alex Lohse
+=======
+Hello, my name is Richard and I'm happy to be 
+here. Just look at my face. :P ~ Richard Orr
+
+Hello again. ~ Richard Orr
+>>>>>>> 3c19bb1671d0199056e69b47869abd926c697c08
