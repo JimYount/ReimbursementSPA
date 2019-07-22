@@ -7,11 +7,87 @@ Hi this is Kerwin and this is a file. ~ Kerwin Chu
 Hello from over here. - Hans
 Hi people. ~ Dan Zonca
 Hello again. ~ Richard Orr
+
+:( - Josh Ponti
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hi there people ~ Andrew Weber
+
+
 Hi, i made this comment ~ Luis Valencia
 
 
 
 
+<<<<<<< HEAD
 Welp... Let's try again! Jonathan Soncrant
 
 did i do it this time? - Josh Pontipiedra
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Hello, my name is Adam and I'm looking forward to the next 10 weeks with all of you. ~Adam Hemmelgarn
+
+Welp... Let's try again! Jonathan Soncrant
+>>>>>>> 49b1ff0615dff41d2f2f6feaa051e655cfe2eff8
