@@ -55,6 +55,5 @@ Hello again. ~ Richard Orr
 
 Hi there people ~ Andrew Weber
 
-=======
+
 Hi, i made this comment ~ Luis Valencia
->>>>>>> a6141332ffa7da0974b44f38ce6270f3574c4426
