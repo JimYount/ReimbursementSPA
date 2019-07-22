@@ -1,10 +1,24 @@
+Hello, my name is Dylan and I'm happy to be 
+here. Just look at my face. :P ~ Dylan Payne
 Hello, my name is Richard and I'm happy to be 
 here. Just look at my face. :P ~ Richard Orr
 
+<<<<<<< HEAD
+=======
+Hi this is Kerwin and this is a file. ~ Kerwin Chu
+Hello from over here. - Hans
+Hi people. ~ Dan Zonca
+Hello again. ~ Richard Orr
+Hi, i made this comment ~ Luis Valencia
+>>>>>>> 65d427c5086ac6315e5ab00f1fe43911c5673dfe
 
 
 
 
+<<<<<<< HEAD
 
 
 Hello my name is William Thompson
+=======
+Welp... Let's try again! Jonathan Soncrant
+>>>>>>> 65d427c5086ac6315e5ab00f1fe43911c5673dfe
