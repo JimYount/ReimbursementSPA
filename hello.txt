@@ -65,18 +65,13 @@ Hi there people ~ Andrew Weber
 
 
 Hi, i made this comment ~ Luis Valencia
->>>>>>> 65d427c5086ac6315e5ab00f1fe43911c5673dfe
 
 
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 
 
 Hello my name is William Thompson
-=======
-=======
 
 
 
@@ -96,6 +91,4 @@ Hello my name is William Thompson
 
 Hello, my name is Adam and I'm looking forward to the next 10 weeks with all of you. ~Adam Hemmelgarn
 
->>>>>>> 49b1ff0615dff41d2f2f6feaa051e655cfe2eff8
 Welp... Let's try again! Jonathan Soncrant
->>>>>>> 65d427c5086ac6315e5ab00f1fe43911c5673dfe
