@@ -1,4 +1,10 @@
+<<<<<<< HEAD
 Hello, my name is Richard and I'm happy to be
+=======
+Hello, my name is Dylan and I'm happy to be 
+here. Just look at my face. :P ~ Dylan Payne
+Hello, my name is Richard and I'm happy to be 
+>>>>>>> 65d427c5086ac6315e5ab00f1fe43911c5673dfe
 here. Just look at my face. :P ~ Richard Orr
 
 <<<<<<< HEAD
