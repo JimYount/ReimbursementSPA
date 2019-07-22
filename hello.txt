@@ -1,12 +1,18 @@
 
+Hello, my name is Richard and I'm happy to be
+
+
 
 Hello, Everyone!
--Myles 
+-Myles
 
-Hello, my name is Dylan and I'm happy to be 
+Hello, my name is Dylan and I'm happy to be
 here. Just look at my face. :P ~ Dylan Payne
-Hello, my name is Richard and I'm happy to be 
+Hello, my name is Richard and I'm happy to be
 here. Just look at my face. :P ~ Richard Orr
+
+
+Hello, my name is Jon.
 
 
 Hi this is Kerwin and this is a file. ~ Kerwin Chu
@@ -109,8 +115,6 @@ Hello, my name is Adam and I'm looking forward to the next 10 weeks with all of 
 
 Welp... Let's try again! Jonathan Soncrant
 
-<<<<<<< HEAD
-
 
 
 
@@ -139,5 +143,3 @@ Welp... Let's try again! Jonathan Soncrant
 　| |  　) /
 `ノ ) 　 Lﾉ
 (_／
-=======
->>>>>>> 88336ac16899160438e2af93a5004443075898af
