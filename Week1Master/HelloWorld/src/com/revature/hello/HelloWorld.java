@@ -38,9 +38,9 @@ public class HelloWorld {
 		h.message = "tree";
 		System.out.println(h.message);
 		System.out.println(h2.message);
-		System.out.println(h2.staticMessage);
-		h2.staticMessage = "Goodbye";
-		System.out.println(h.staticMessage);
+		//System.out.println(h2.staticMessage);
+		//h2.staticMessage = "Goodbye";
+		//System.out.println(h.staticMessage);
 	}
 	
 	/*
