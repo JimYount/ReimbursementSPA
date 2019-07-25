@@ -1,0 +1,55 @@
+2019-07-25 09:52:15 TRACE LambdaPredicate:10 - 33
+2019-07-25 09:52:15 TRACE LambdaPredicate:12 - -3.0
+2019-07-25 09:56:18 TRACE LambdaPredicate:26 - 33
+2019-07-25 09:56:18 TRACE LambdaPredicate:28 - -3.0
+2019-07-25 09:56:19 DEBUG LambdaPredicate:32 - true
+2019-07-25 09:57:02 TRACE LambdaPredicate:26 - 33
+2019-07-25 09:57:02 TRACE LambdaPredicate:28 - -3.0
+2019-07-25 09:57:02 DEBUG LambdaPredicate:32 - true
+2019-07-25 09:57:02 DEBUG LambdaPredicate:38 - true
+2019-07-25 09:57:19 TRACE LambdaPredicate:26 - 33
+2019-07-25 09:57:19 TRACE LambdaPredicate:28 - -3.0
+2019-07-25 09:57:19 DEBUG LambdaPredicate:32 - true
+2019-07-25 09:57:19 DEBUG LambdaPredicate:38 - true
+2019-07-25 09:57:48 TRACE LambdaPredicate:26 - 33
+2019-07-25 09:57:48 TRACE LambdaPredicate:28 - -3.0
+2019-07-25 09:57:49 DEBUG LambdaPredicate:32 - true
+2019-07-25 09:57:49 DEBUG LambdaPredicate:38 - true
+2019-07-25 09:57:49 TRACE LambdaPredicate:41 - Infinity
+2019-07-25 09:58:26 TRACE LambdaPredicate:26 - 33
+2019-07-25 09:58:26 TRACE LambdaPredicate:28 - -3.0
+2019-07-25 09:58:26 DEBUG LambdaPredicate:32 - true
+2019-07-25 09:58:26 DEBUG LambdaPredicate:38 - true
+2019-07-25 09:58:26 TRACE LambdaPredicate:41 - -Infinity
+2019-07-25 10:03:51 TRACE CalculatorTest:15 - Testing multiplication of Zero equals zero
+2019-07-25 10:04:35 TRACE CalculatorTest:15 - Testing multiplication of Zero equals zero
+2019-07-25 10:05:08 TRACE CalculatorTest:15 - Testing multiplication of Zero equals zero
+2019-07-25 10:07:10 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:07:10 TRACE CalculatorTest:21 - Testing multiplication of Zero equals zero
+2019-07-25 10:09:03 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:09:03 TRACE CalculatorTest:31 - Testing division of Zero equals infinity
+2019-07-25 10:09:03 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:09:03 TRACE CalculatorTest:21 - Testing multiplication of Zero equals zero
+2019-07-25 10:10:48 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:10:48 TRACE CalculatorTest:31 - Testing division of Zero equals infinity
+2019-07-25 10:10:48 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:10:48 WARN  CalculatorTest:41 - About to call a method that shouldn't exist
+2019-07-25 10:10:48 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:10:48 TRACE CalculatorTest:21 - Testing multiplication of Zero equals zero
+2019-07-25 10:10:58 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:10:58 TRACE CalculatorTest:31 - Testing division of Zero equals infinity
+2019-07-25 10:10:58 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:10:58 WARN  CalculatorTest:41 - About to call a method that shouldn't exist
+2019-07-25 10:10:58 TRACE CalculatorTest:16 - Creating a new calculator
+2019-07-25 10:10:58 TRACE CalculatorTest:21 - Testing multiplication of Zero equals zero
+2019-07-25 10:13:18 TRACE CalculatorTest:18 - Set up something for the entire run.
+2019-07-25 10:13:18 TRACE CalculatorTest:26 - Creating a new calculator
+2019-07-25 10:13:18 TRACE CalculatorTest:46 - Testing division of Zero equals infinity
+2019-07-25 10:13:18 TRACE CalculatorTest:31 - Tearing down resources
+2019-07-25 10:13:18 TRACE CalculatorTest:26 - Creating a new calculator
+2019-07-25 10:13:18 WARN  CalculatorTest:56 - About to call a method that shouldn't exist
+2019-07-25 10:13:18 TRACE CalculatorTest:31 - Tearing down resources
+2019-07-25 10:13:18 TRACE CalculatorTest:26 - Creating a new calculator
+2019-07-25 10:13:18 TRACE CalculatorTest:36 - Testing multiplication of Zero equals zero
+2019-07-25 10:13:18 TRACE CalculatorTest:31 - Tearing down resources
+2019-07-25 10:13:18 TRACE CalculatorTest:22 - tear that thing back down.
