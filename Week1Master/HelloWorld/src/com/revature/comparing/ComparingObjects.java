@@ -28,6 +28,9 @@ public class ComparingObjects {
 				return b1.compareTo(b2);
 			return (b1.isTasty()) ? 1 : -1;
 		};
+		// () -> 1;
+		// () -> { return 1 }; 
+		
 		
 		t = new TreeSet<Bean>(bc);
 		t.addAll(beanTree);

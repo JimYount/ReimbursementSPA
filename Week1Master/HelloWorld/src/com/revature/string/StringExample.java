@@ -18,7 +18,6 @@ public class StringExample {
 		sb.append(" World");
 		sb.reverse();
 		System.out.println(sb.toString());
-		
 		String s = "Hello World";
 		char c[] = s.toCharArray();
 		for(int i = 0; i<c.length/2; i++) {
