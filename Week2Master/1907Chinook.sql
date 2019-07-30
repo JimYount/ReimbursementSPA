@@ -115,3 +115,33 @@ select artistid, count(artistid) as "# Albums" from album group by artistid;
 select name, "# Albums" from artist join 
     (select artistid, count(artistid) as "# Albums" from album group by artistid)
 using (artistid);
+
+select name, "# Albums" from artist a join 
+    (select artistid, count(artistid) as "# Albums" from album group by artistid) b
+on a.artistid = b.artistid;
+
+select name, "# Albums" from artist a join 
+    (select artistid, count(artistid) as "# Albums" from album group by artistid) b
+on a.artistid = b.artistid order by "# Albums" desc;
+
+
+-- Select all rock tracks and the artist's name
+select * from track;
+-- narrow to relevant fields
+select name, genreid, albumid from track;
+-- join that to the Genre table
+select track.name, track.albumid, genre.name as "GENRE" from track join genre using (genreid);
+-- restrict results to just rock
+select track.name, track.albumid, genre.name as "GENRE" from track join genre
+    using (genreid) where genre.name like 'Rock%';
+    
+-- Join with album
+select "Track Name", album.artistid, genre from 
+    (select track.name as "Track Name", track.albumid, genre.name as "GENRE" from track join genre
+    using (genreid) where genre.name like 'Rock%') join album using (albumid);
+
+-- join with artist
+select "Track Name", artist.name, genre from 
+    (select "Track Name", album.artistid, genre from 
+    (select track.name as "Track Name", track.albumid, genre.name as "GENRE" from track join genre
+    using (genreid) where genre.name like 'Rock%') join album using (albumid)) join artist using (artistid);
