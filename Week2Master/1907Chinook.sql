@@ -130,7 +130,8 @@ select * from track;
 -- narrow to relevant fields
 select name, genreid, albumid from track;
 -- join that to the Genre table
-select track.name, track.albumid, genre.name as "GENRE" from track join genre using (genreid);
+select track.name, track.albumid, genre.name as "GENRE" 
+    from track join genre using (genreid);
 -- restrict results to just rock
 select track.name, track.albumid, genre.name as "GENRE" from track join genre
     using (genreid) where genre.name like 'Rock%';
@@ -145,3 +146,87 @@ select "Track Name", artist.name, genre from
     (select "Track Name", album.artistid, genre from 
     (select track.name as "Track Name", track.albumid, genre.name as "GENRE" from track join genre
     using (genreid) where genre.name like 'Rock%') join album using (albumid)) join artist using (artistid);
+    
+/*
+    Natural Join - The db attempts to perform an inner join on like columns
+    Inner Join - Only matches will show in resulting result set
+    Outer Join - Every row will show even if there is no match
+    Left outer join - all results from the left table with only
+            matches from the right
+    Right outer join - all results fromt he right table with only
+            matches from the left
+    Cross Join - Cartesian product of two tables. (every row with every row)
+    Self Join - Joining a table with itself.
+*/
+-- self inner join
+select * from employee;
+select bob.firstname as "Employee", man.firstname as "Manager"
+    from employee bob join employee man on bob.reportsto= man.employeeid;
+-- self outer join
+select bob.firstname as "Employee", man.firstname as "Manager"
+    from employee bob full outer join employee man on bob.reportsto= man.employeeid;
+-- self left join
+select bob.firstname as "Employee", man.firstname as "Manager"
+    from employee bob left outer join employee man on bob.reportsto= man.employeeid;
+-- self right join
+select bob.firstname as "Employee", man.firstname as "Manager"
+    from employee bob right outer join employee man on bob.reportsto= man.employeeid;
+
+-- cross join
+select count(*) from album; --347
+select count(*) from artist; --275
+select count(*) from album, artist; -- 95425
+select count(*) from album cross join artist;
+select * from album, artist;
+
+-- group by and having
+select count(firstname), company from customer group by company;
+-- where clause
+select count(firstname), company from customer where company = 'Google Inc.';
+select count(firstname), company from customer where company = 'Google Inc.' group by company;
+select count(firstname), company from customer where count(firstname)=1 group by company;
+select count(firstname), company from customer group by company having count(firstname)=1;
+
+select count(albumid) as "# of Albums", name from
+    (select album.albumid, artist.artistid, artist.name from
+        album join artist on album.artistid = artist.artistid)
+    where artistid > 5
+    group by name
+    having count(albumid)>1
+    order by "# of Albums" asc;
+
+-- cannot use having without group by
+select count(albumid) from album where albumid>5;
+select count(albumid) from album having albumid>5;
+
+-- Set Operations
+/*
+    Combine results with like columns
+    Union - All unique rows in both sets
+        (a, b, c) U (b, c) = (a, b, c)
+    Union All - All rows in both sets
+        (a, b, c) U All (b, c)  = (a, b, b, c, c)
+    Intersect - Only rows in both sets
+        (a, b, c) Intersect (b, c) = (b, c)
+    Minus - Only rows in the first set
+        (a, b, c) minus (b, c) = (a)
+*/
+
+select * from customer where state = 'CA';
+select * from customer where country = 'Brazil';
+select * from customer where state = 'CA' union 
+    select * from customer where country = 'Brazil';
+
+select * from invoiceline where unitprice > .99; --111
+select * from invoiceline where trackid < 3000; --1961
+select * from invoiceline where unitprice > .99
+    minus select * from invoiceline where trackid < 3000; --58
+select * from invoiceline where unitprice > .99
+    intersect select * from invoiceline where trackid < 3000; --53
+    
+select firstname from employee;
+select firstname from customer;
+select firstname from employee intersect select firstname from customer;
+
+select firstname, lastname from employee
+    intersect select firstname, lastname from customer;
