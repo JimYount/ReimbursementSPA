@@ -13,8 +13,8 @@ import com.revature.beans.Genre;
 import com.revature.beans.User;
 import com.revature.data.GenreDAO;
 import com.revature.data.GenreOracle;
-import com.revature.util.ConnectionUtil;
-import com.revature.util.LogUtil;
+import com.revature.utils.ConnectionUtil;
+import com.revature.utils.LogUtil;
 
 public class Driver {
 	private static Logger log = Logger.getLogger(Driver.class);

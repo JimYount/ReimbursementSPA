@@ -170,3 +170,12 @@ insert into emp(id, sup_id, title)
   values((select id from login where username='rorr'),
   (select id from login where username='pski'), 'Cashier');
 commit;
+
+-- calculate how much a book costs in a particular state
+select title, price from book;
+select * from taxrate where state = 'WV';
+select title, price, round((1+rate)*price, 2) as "total" 
+    from book, taxrate where taxrate.state ='WV';
+
+
+--

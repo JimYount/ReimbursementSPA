@@ -2,6 +2,7 @@ package com.revature.data;
 
 import java.util.Set;
 
+import com.revature.beans.Book;
 import com.revature.beans.Genre;
 
 public interface GenreDAO {
@@ -12,7 +13,7 @@ public interface GenreDAO {
 	Genre getGenre(Integer id);
 	Genre getGenreByGenre(String genre);
 	Set<Genre> getGenres();
-	//Set<Genre> getGenresByBook(Book b);
+	Set<Genre> getGenresByBook(Book b);
 	// UPDATE = UPDATE
 	void updateGenre(Genre g);
 	// DELETE = DELETE

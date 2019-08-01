@@ -9,9 +9,10 @@ import java.util.Set;
 
 import org.apache.log4j.Logger;
 
+import com.revature.beans.Book;
 import com.revature.beans.Genre;
-import com.revature.util.ConnectionUtil;
-import com.revature.util.LogUtil;
+import com.revature.utils.ConnectionUtil;
+import com.revature.utils.LogUtil;
 
 public class GenreOracle implements GenreDAO{
 	private static Logger log = Logger.getLogger(GenreOracle.class);
@@ -180,6 +181,27 @@ public class GenreOracle implements GenreDAO{
 				LogUtil.logException(e, GenreOracle.class);
 			}
 		}
+	}
+
+	@Override
+	public Set<Genre> getGenresByBook(Book b) {
+		log.trace("Attempting to find genres by book: "+b);
+		Set<Genre> genreSet = new HashSet<Genre>();
+		String sql = "select * from genre join book_genre on "
+				+"genre.id = book_genre.genre_id where book_id = ?";
+		try(Connection conn = cu.getConnection()) {
+			PreparedStatement pstmt = conn.prepareStatement(sql);
+			ResultSet rs = pstmt.executeQuery();
+			while(rs.next()) {
+				Genre g = new Genre();
+				g.setId(rs.getInt("Id"));
+				g.setGenre(rs.getString("genre"));
+				genreSet.add(g);
+			}
+		} catch(Exception e) {
+			LogUtil.logException(e, GenreOracle.class);
+		}
+		return genreSet;
 	}
 	
 }
