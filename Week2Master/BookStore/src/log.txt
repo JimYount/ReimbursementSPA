@@ -46,3 +46,161 @@
 2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=2, genre=Non-Fiction]
 2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=4, genre=Sci-Fi]
 2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=5, genre=Historical Romance]
+2019-08-01 13:56:46 TRACE GenreOracle:107 - Attempting to find genres
+2019-08-01 13:56:47 TRACE GenreOracle:114 - Found genre: Fantasy
+2019-08-01 13:56:47 TRACE GenreOracle:114 - Found genre: Fiction
+2019-08-01 13:56:47 TRACE GenreOracle:114 - Found genre: Historical Romance
+2019-08-01 13:56:47 TRACE GenreOracle:114 - Found genre: Mystery
+2019-08-01 13:56:47 TRACE GenreOracle:114 - Found genre: Non-Fiction
+2019-08-01 13:56:47 TRACE GenreOracle:114 - Found genre: Sci-Fi
+2019-08-01 13:56:48 TRACE GenreOracle:123 - Returning genres: [Genre [id=3, genre=Fiction], Genre [id=6, genre=Mystery], Genre [id=1, genre=Fantasy], Genre [id=2, genre=Non-Fiction], Genre [id=4, genre=Sci-Fi], Genre [id=5, genre=Historical Romance]]
+2019-08-01 13:56:48 TRACE Driver:36 - Genre [id=3, genre=Fiction]
+2019-08-01 13:56:48 TRACE Driver:36 - Genre [id=6, genre=Mystery]
+2019-08-01 13:56:48 TRACE Driver:36 - Genre [id=1, genre=Fantasy]
+2019-08-01 13:56:48 TRACE Driver:36 - Genre [id=2, genre=Non-Fiction]
+2019-08-01 13:56:48 TRACE Driver:36 - Genre [id=4, genre=Sci-Fi]
+2019-08-01 13:56:48 TRACE Driver:36 - Genre [id=5, genre=Historical Romance]
+2019-08-01 13:56:48 TRACE BookOracle:175 - retrieving all books from database.
+2019-08-01 13:56:49 TRACE Driver:40 - Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[], price=8.99, stock=50, cover=null, genres=[]]
+2019-08-01 13:56:49 TRACE Driver:40 - Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[], price=8.79, stock=60, cover=null, genres=[]]
+2019-08-01 13:56:49 TRACE Driver:40 - Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[], price=8.68, stock=496, cover=null, genres=[]]
+2019-08-01 13:56:49 TRACE Driver:40 - Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[], price=8.33, stock=30, cover=null, genres=[]]
+2019-08-01 13:56:49 TRACE Driver:40 - Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[], price=19.82, stock=48, cover=null, genres=[]]
+2019-08-01 14:00:17 TRACE BookOracle:175 - retrieving all books from database.
+2019-08-01 14:00:21 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:21 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[Author [id=5, first=Jim, last=Butcher, about=null]], price=8.99, stock=50, cover=null, genres=[]]
+2019-08-01 14:00:22 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:22 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:23 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:23 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[Author [id=3, first=George, last=Martin, about=Sadist]], price=8.79, stock=60, cover=null, genres=[]]
+2019-08-01 14:00:24 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:24 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:25 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:26 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[Author [id=2, first=Robert, last=Jordan, about=Lived in Charleston, SC]], price=8.68, stock=496, cover=null, genres=[]]
+2019-08-01 14:00:27 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:27 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:28 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:28 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=8.33, stock=30, cover=null, genres=[]]
+2019-08-01 14:00:29 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:29 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:30 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:30 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=19.82, stock=48, cover=null, genres=[]]
+2019-08-01 14:00:31 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:31 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:31 TRACE Driver:39 - Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[Author [id=5, first=Jim, last=Butcher, about=null]], price=8.99, stock=50, cover=null, genres=[]]
+2019-08-01 14:00:31 TRACE Driver:39 - Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[Author [id=3, first=George, last=Martin, about=Sadist]], price=8.79, stock=60, cover=null, genres=[]]
+2019-08-01 14:00:31 TRACE Driver:39 - Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[Author [id=2, first=Robert, last=Jordan, about=Lived in Charleston, SC]], price=8.68, stock=496, cover=null, genres=[]]
+2019-08-01 14:00:31 TRACE Driver:39 - Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=8.33, stock=30, cover=null, genres=[]]
+2019-08-01 14:00:31 TRACE Driver:39 - Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=19.82, stock=48, cover=null, genres=[]]
+2019-08-01 14:00:46 TRACE BookOracle:175 - retrieving all books from database.
+2019-08-01 14:00:49 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:49 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[Author [id=5, first=Jim, last=Butcher, about=null]], price=8.99, stock=50, cover=null, genres=[]]
+2019-08-01 14:00:50 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:50 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:51 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:51 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[Author [id=3, first=George, last=Martin, about=Sadist]], price=8.79, stock=60, cover=null, genres=[]]
+2019-08-01 14:00:52 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:52 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:53 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:53 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[Author [id=2, first=Robert, last=Jordan, about=Lived in Charleston, SC]], price=8.68, stock=496, cover=null, genres=[]]
+2019-08-01 14:00:55 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:55 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:56 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:56 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=8.33, stock=30, cover=null, genres=[]]
+2019-08-01 14:00:57 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:57 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:58 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:00:58 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=19.82, stock=48, cover=null, genres=[]]
+2019-08-01 14:00:59 ERROR GenreOracle:15 - class java.sql.SQLException: Missing IN or OUT parameter at index:: 1
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 2076: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 4790: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 4845: oracle.jdbc.driver.OraclePreparedStatement
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 1501: oracle.jdbc.driver.OraclePreparedStatementWrapper
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 194: com.revature.data.GenreOracle
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 30: com.revature.services.BookServiceOracle
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 38: com.revature.driver.Driver
+2019-08-01 14:00:59 WARN  GenreOracle:17 - 33: com.revature.driver.Driver
+2019-08-01 14:00:59 TRACE Driver:39 - Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[Author [id=5, first=Jim, last=Butcher, about=null]], price=8.99, stock=50, cover=null, genres=[]]
+2019-08-01 14:00:59 TRACE Driver:39 - Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[Author [id=3, first=George, last=Martin, about=Sadist]], price=8.79, stock=60, cover=null, genres=[]]
+2019-08-01 14:00:59 TRACE Driver:39 - Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[Author [id=2, first=Robert, last=Jordan, about=Lived in Charleston, SC]], price=8.68, stock=496, cover=null, genres=[]]
+2019-08-01 14:00:59 TRACE Driver:39 - Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=8.33, stock=30, cover=null, genres=[]]
+2019-08-01 14:00:59 TRACE Driver:39 - Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=19.82, stock=48, cover=null, genres=[]]
+2019-08-01 14:02:04 TRACE BookOracle:175 - retrieving all books from database.
+2019-08-01 14:02:07 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:02:07 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[Author [id=5, first=Jim, last=Butcher, about=null]], price=8.99, stock=50, cover=null, genres=[]]
+2019-08-01 14:02:10 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:02:10 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[Author [id=3, first=George, last=Martin, about=Sadist]], price=8.79, stock=60, cover=null, genres=[]]
+2019-08-01 14:02:12 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:02:12 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[Author [id=2, first=Robert, last=Jordan, about=Lived in Charleston, SC]], price=8.68, stock=496, cover=null, genres=[]]
+2019-08-01 14:02:14 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:02:15 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=8.33, stock=30, cover=null, genres=[]]
+2019-08-01 14:02:17 TRACE AuthorOracle:143 - Getting all authors by book
+2019-08-01 14:02:17 TRACE GenreOracle:188 - Attempting to find genres by book: Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=19.82, stock=48, cover=null, genres=[]]
+2019-08-01 14:02:18 TRACE Driver:39 - Book [id=5, title=Storm Front, isbn10=0451457811, isbn13=978-0451457813, authors=[Author [id=5, first=Jim, last=Butcher, about=null]], price=8.99, stock=50, cover=null, genres=[Genre [id=6, genre=Mystery], Genre [id=1, genre=Fantasy]]]
+2019-08-01 14:02:18 TRACE Driver:39 - Book [id=1, title=A Game of Thrones, isbn10=0553593714, isbn13=978-0553593716, authors=[Author [id=3, first=George, last=Martin, about=Sadist]], price=8.79, stock=60, cover=null, genres=[Genre [id=1, genre=Fantasy]]]
+2019-08-01 14:02:18 TRACE Driver:39 - Book [id=2, title=The Eye of the World, isbn10=0812511816, isbn13=978-0812511819, authors=[Author [id=2, first=Robert, last=Jordan, about=Lived in Charleston, SC]], price=8.68, stock=496, cover=null, genres=[Genre [id=1, genre=Fantasy]]]
+2019-08-01 14:02:18 TRACE Driver:39 - Book [id=4, title=Harry Potter and the Chamber of Secrets, isbn10=0439064872, isbn13=978-0439064873, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=8.33, stock=30, cover=null, genres=[Genre [id=1, genre=Fantasy]]]
+2019-08-01 14:02:18 TRACE Driver:39 - Book [id=3, title=Harry Potter and the Sorcerer's Stone, isbn10=0590353403, isbn13=978-0590353403, authors=[Author [id=1, first=J.K., last=Rowling, about=One of the richest people in the world.]], price=19.82, stock=48, cover=null, genres=[Genre [id=1, genre=Fantasy]]]

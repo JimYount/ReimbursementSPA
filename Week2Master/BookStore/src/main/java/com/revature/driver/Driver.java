@@ -9,10 +9,15 @@ import java.util.Scanner;
 
 import org.apache.log4j.Logger;
 
+import com.revature.beans.Book;
 import com.revature.beans.Genre;
 import com.revature.beans.User;
+import com.revature.data.BookDAO;
+import com.revature.data.BookOracle;
 import com.revature.data.GenreDAO;
 import com.revature.data.GenreOracle;
+import com.revature.services.BookService;
+import com.revature.services.BookServiceOracle;
 import com.revature.utils.ConnectionUtil;
 import com.revature.utils.LogUtil;
 
@@ -24,13 +29,25 @@ public class Driver {
 		//firstAttempt();
 		//System.out.println(getGenre(2));
 		//login();
-		daos();
+		//daos();
+		services();
+	}
+
+	private static void services() {
+		BookService bs = new BookServiceOracle();
+		for(Book b : bs.getBooks()) {
+			log.trace(b);
+		}
 	}
 
 	private static void daos() {
 		GenreDAO gd = new GenreOracle();
 		for(Genre g : gd.getGenres()) {
 			log.trace(g);
+		}
+		BookDAO bd = new BookOracle();
+		for(Book b : bd.getBooks()) {
+			log.trace(b);
 		}
 	}
 

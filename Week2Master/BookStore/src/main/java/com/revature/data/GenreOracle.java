@@ -191,6 +191,7 @@ public class GenreOracle implements GenreDAO{
 				+"genre.id = book_genre.genre_id where book_id = ?";
 		try(Connection conn = cu.getConnection()) {
 			PreparedStatement pstmt = conn.prepareStatement(sql);
+			pstmt.setInt(1, b.getId());
 			ResultSet rs = pstmt.executeQuery();
 			while(rs.next()) {
 				Genre g = new Genre();
