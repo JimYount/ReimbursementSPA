@@ -216,3 +216,150 @@ begin
     end if;
 end;
 /
+-- Functions
+/* Functions are reusable PL/SQL blocks
+    They take in parameters (in, out, or inout) (using out  
+        or inout in a function is bad practice)
+    They have a return value and can therefore be used
+        inside of a statement.
+            (select, insert, update, or delete)
+    functions can call other functions
+    Functions can only use DQL statements
+*/
+create or replace function calculateTax
+    (book_id in number, cust_id in number)
+return number
+is -- as also works here
+-- after the is/as, we have a chance to declare variables we
+-- wish to use inside of the function
+book_price number(10, 2);
+home_state varchar2(3);
+tax_rate number(5,5);
+begin
+    -- functions allow me to run DQL statements and return a value
+    select state into home_state from customer join address
+        on customer.address_id = address.id
+        where customer.id = cust_id;
+    select rate into tax_rate from taxrate where state=home_state;
+    select price into book_price from book where id=book_id;
+    return round(book_price * (1+tax_rate),2);
+end;
+/
+
+create or replace function calculateTax2
+    (total in number, cust_id in number)
+return number
+is
+home_state varchar2(3);
+tax_rate number(5,5);
+begin
+    select state into home_state from customer join address
+        on customer.address_id = address.id where customer.id=cust_id;
+    select rate into tax_rate from taxrate where state = home_state;
+    return total * (1+ tax_rate);
+end;
+/
+
+-- Stored Procedures
+/*
+    A PL/SQL block with a name that can be reused
+    It has in, out, and inout parameters
+    It has NO return value
+    We can use DML, TCL, and DQL statements
+    We can call other stored procedures and functions inside them.
+*/
+create or replace procedure add_book_to_cart
+(purchase_in in number, book_in in number,
+    total_out out number, updated_row out sys_refcursor)
+as
+-- declare variables
+cust_id number(20);
+book_stock number(5);
+new_stock number(5);
+num_in_cart number(5);
+sum_purchase number(10, 2);
+begin
+    set transaction name 'add_book';
+    select stock into book_stock from book where book.id=book_in;
+    if book_stock > 0 then
+        savepoint add_book;
+        --time to go to work
+        --1. update book stock
+        update book set stock = (stock-1) where book.id=book_in;
+        --2. Check to see if we already have a book.
+        select count(*) into num_in_cart from purchase_book p
+            where p.book_id = book_in and p.purchase_id = purchase_in;
+        if num_in_cart = 0 then
+            -- INSERT
+            insert into purchase_book(purchase_id, book_id, quantity)
+                values(purchase_in, book_in, 1);
+        else
+            -- UPDATE
+            update purchase_book set quantity = quantity+1
+                where book_id = book_in and purchase_id = purchase_in;
+        end if;
+        --3. Update the total
+        select sum(purchase_book.quantity * book.price) into sum_purchase
+            from purchase_book join book on book.id = purchase_book.book_id
+            where purchase_book.purchase_id = purchase_in;
+        select customer_id into cust_id from purchase where id = purchase_in;
+        select calculatetax2(sum_purchase, cust_id) into total_out from dual;
+        -- 4. Finally update the purchase total
+        update purchase set total = total_out where id = purchase_in;
+        commit; --make those changes stick
+        --rollback to add_book;
+    end if;
+    -- sysrefcursor stuff
+    -- A Cursor is a pointer to a stored result set
+    open updated_row for select * from purchase_book where
+        purchase_id = purchase_in;    
+end;
+/
+create or replace procedure remove_book_from_cart
+(purchase_in in number, book_in in number, total_out out number, updated_row out sys_refcursor)
+as
+--declare variables
+cust_id number(20);
+book_stock number(5);
+num_in_cart number(5);
+sum_purchase number(10,2);
+begin
+  --create a spot to save our current state.
+  savepoint remove_book;
+  --update book stock
+  update book set stock= ((select stock from book where book.id=book_in)+1)
+      where book.id=book_in;
+  --remove the book from the shopping cart
+  select count(*) into num_in_cart from purchase_book p
+    where p.book_id = book_in and p.purchase_id = purchase_in;
+    if num_in_cart > 0 then
+      --update
+      update purchase_book set quantity = quantity-1
+        where book_id = book_in and purchase_id = purchase_in;
+      select quantity into book_stock from purchase_book p
+        where p.book_id = book_in and p.purchase_id = purchase_in;
+      if book_stock < 1 then
+        delete from purchase_book where book_id=book_in and purchase_id = purchase_in;
+      end if;
+      -- update total
+      select SUM(purchase_book.quantity*book.PRICE) into sum_purchase from purchase_book join book on book.ID=purchase_book.BOOK_ID where purchase_book.purchase_id = purchase_in;
+      select customer_id into cust_id from purchase where id=purchase_in;
+      select calculatetax2(sum_purchase,cust_id) into total_out from dual;
+      update purchase set total=total_out where id=purchase_in;
+    else
+      -- failure
+      rollback to remove_book;
+    end if;
+  open updated_row for select * from purchase_book where purchase_id=purchase_in;
+end remove_book_from_cart;
+/
+
+create or replace procedure empty_cart
+(purch_id IN number)
+as
+cursor purchases
+    is
+        select book_id, quantity from purchase_book where purchase_id = purch_id;
+begin
+end empty_cart;
+/

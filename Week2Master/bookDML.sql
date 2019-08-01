@@ -178,4 +178,5 @@ select title, price, round((1+rate)*price, 2) as "total"
     from book, taxrate where taxrate.state ='WV';
 
 
---
+-- Calculate the price of Harry Potter and the Chamber of Secrets
+-- Specifically for the user Paul. His username is paulm.
