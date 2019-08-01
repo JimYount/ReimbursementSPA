@@ -180,3 +180,103 @@ select title, price, round((1+rate)*price, 2) as "total"
 
 -- Calculate the price of Harry Potter and the Chamber of Secrets
 -- Specifically for the user Paul. His username is paulm.
+
+-- Jonathan S
+select TITLE, PRICE, ROUND((1+RATE)*PRICE, 2) as "Total"
+    from BOOK, TAXRATE where TITLE = 'Harry Potter and the Chamber of Secrets'
+    and STATE =
+    (select STATE from ADDRESS where ID = 
+        (select ID from Login where username = 'paulm'));
+-- Hans
+select title, price, (1+rate)*price
+    from book, taxrate where state =
+    (select state from address where id = 
+        (select id from login where username='paulm'))
+    and  title='Harry Potter and the Chamber of Secrets';
+
+
+-- The way I go about this
+select * from login;
+select * from login join customer using(id) where login.username='paulm';
+select address_id from login join customer using(id) where login.username='paulm';
+
+select state from address where id = 
+    (select address_id from login
+        join customer using(id) where login.username='paulm');
+        
+select rate from taxrate where state = (select state from address where id = 
+    (select address_id from login
+        join customer using(id) where login.username='paulm'));
+
+select title, price from book where title like '%Chamber%';
+
+select title, price, round((1+rate)*price, 2) as "Total"
+from book, (select rate from taxrate where state = (select state from address where id = 
+    (select address_id from login
+        join customer using(id) where login.username='paulm')))
+where title like '%Chamber%';
+
+
+-- Customers
+select * from customer;
+select * from login;
+select id, login.username, login.pswd, login.first_name,
+    login.last_name, customer.address_id, customer.fav_color from
+    login join customer using (id);
+select c.id, c.username, c.pswd, c.first_name,
+    c.last_name, c.fav_color, address.lineone,
+    address.linetwo, address.city, address.state, address.zip
+    from (select * from login join customer using(id)) c join
+    address on c.address_id = address.id;
+
+create or replace view customerdata as (select c.id, c.username, c.pswd, c.first_name,
+    c.last_name, c.fav_color, address.lineone,
+    address.linetwo, address.city, address.state, address.zip
+    from (select * from login join customer using(id)) c join
+    address on c.address_id = address.id);
+    
+select * from customerdata;
+
+select title, username, price, state from book, customerdata;
+
+select title, username, price, round((1+rate)*price,2) as "Total" from
+(select title, username, price, state from book, customerdata)
+join taxrate using(state);
+
+select calculateTax(1, 1) from dual;
+select title, customerdata.username, 
+    calculateTax(book.id, customerdata.id)
+    from book, customerdata;
+
+-- make some empty purchases to work with
+insert into purchase(customer_id, status) values
+    ( (select id from login where username='paulm'), 'OPEN');
+insert into purchase(customer_id, status) values
+    ( (select id from login where username='rorr'), 'OPEN');    
+commit;
+
+-- enable console output for pl/sql
+set serveroutput on;
+
+declare
+    curs sys_refcursor;
+    purch number;
+    book number;
+    total number;
+    quantity number;
+begin
+    -- to call a stored procedure in a  pl/sql block, you just call it.
+    add_book_to_cart(1, 2, total, curs);
+    dbms_output.put_line(total);
+    loop
+        fetch curs into purch, book, quantity;
+        exit when curs%NOTFOUND;
+        dbms_output.put_line('['||purch||' | '||book||' | '||quantity||']');
+    end loop;
+end;
+/
+
+exec empty_cart(2);
+commit;
+
+

@@ -361,5 +361,12 @@ cursor purchases
     is
         select book_id, quantity from purchase_book where purchase_id = purch_id;
 begin
+    for res in purchases
+    loop
+        update book set stock = stock + res.quantity where id = res.book_id;
+        delete from purchase_book where book_id = res.book_id and purchase_id = purch_id;
+    end loop;
+    delete from purchase where id = purch_id;
+    commit;
 end empty_cart;
 /
