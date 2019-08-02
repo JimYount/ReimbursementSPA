@@ -1,0 +1,48 @@
+2019-07-31 15:17:47 TRACE Driver:27 - 1 A Game of Thrones
+2019-07-31 15:17:47 TRACE Driver:27 - 2 The Eye of the World
+2019-07-31 15:17:47 TRACE Driver:27 - 3 Harry Potter and the Sorcerer's Stone
+2019-07-31 15:17:47 TRACE Driver:27 - 4 Harry Potter and the Chamber of Secrets
+2019-07-31 15:17:47 TRACE Driver:27 - 5 Storm Front
+2019-07-31 15:21:05 TRACE Driver:28 - 1 A Game of Thrones
+2019-07-31 15:21:05 TRACE Driver:28 - 2 The Eye of the World
+2019-07-31 15:21:05 TRACE Driver:28 - 3 Harry Potter and the Sorcerer's Stone
+2019-07-31 15:21:05 TRACE Driver:28 - 4 Harry Potter and the Chamber of Secrets
+2019-07-31 15:21:05 TRACE Driver:28 - 5 Storm Front
+2019-07-31 15:21:30 TRACE Driver:29 - 1 A Game of Thrones
+2019-07-31 15:21:30 TRACE Driver:29 - 2 The Eye of the World
+2019-07-31 15:21:30 TRACE Driver:29 - 3 Harry Potter and the Sorcerer's Stone
+2019-07-31 15:21:30 TRACE Driver:29 - 4 Harry Potter and the Chamber of Secrets
+2019-07-31 15:21:30 TRACE Driver:29 - 5 Storm Front
+2019-07-31 15:34:08 ERROR Driver:10 - class java.sql.SQLSyntaxErrorException: ORA-00904: "LASTNAME": invalid identifier
+
+2019-07-31 15:34:08 WARN  Driver:12 - 450: oracle.jdbc.driver.T4CTTIoer
+2019-07-31 15:34:08 WARN  Driver:12 - 399: oracle.jdbc.driver.T4CTTIoer
+2019-07-31 15:34:08 WARN  Driver:12 - 1059: oracle.jdbc.driver.T4C8Oall
+2019-07-31 15:34:08 WARN  Driver:12 - 522: oracle.jdbc.driver.T4CTTIfun
+2019-07-31 15:34:08 WARN  Driver:12 - 257: oracle.jdbc.driver.T4CTTIfun
+2019-07-31 15:34:08 WARN  Driver:12 - 587: oracle.jdbc.driver.T4C8Oall
+2019-07-31 15:34:08 WARN  Driver:12 - 210: oracle.jdbc.driver.T4CStatement
+2019-07-31 15:34:08 WARN  Driver:12 - 30: oracle.jdbc.driver.T4CStatement
+2019-07-31 15:34:08 WARN  Driver:12 - 762: oracle.jdbc.driver.T4CStatement
+2019-07-31 15:34:08 WARN  Driver:12 - 925: oracle.jdbc.driver.OracleStatement
+2019-07-31 15:34:08 WARN  Driver:12 - 1111: oracle.jdbc.driver.OracleStatement
+2019-07-31 15:34:08 WARN  Driver:12 - 1309: oracle.jdbc.driver.OracleStatement
+2019-07-31 15:34:08 WARN  Driver:12 - 422: oracle.jdbc.driver.OracleStatementWrapper
+2019-07-31 15:34:08 WARN  Driver:12 - 49: com.revature.driver.Driver
+2019-07-31 15:34:08 WARN  Driver:12 - 36: com.revature.driver.Driver
+2019-07-31 15:34:08 WARN  Driver:12 - 23: com.revature.driver.Driver
+2019-07-31 15:34:08 TRACE Driver:38 - 
+2019-07-31 15:34:38 TRACE Driver:38 - User [id=2, username=rorr, password=pass1, first=Richard, last=Orr]
+2019-07-31 15:34:51 TRACE Driver:38 - User [id=3, username=pski, password=pwd, first=Matt, last=Pierzynski]
+2019-07-31 15:35:03 TRACE Driver:38 - User [id=1, username=paulm, password=pass, first=Paul, last=Maksimovich]
+2019-07-31 15:35:13 TRACE Driver:38 - 
+2019-07-31 15:35:30 TRACE Driver:38 - User [id=2, username=rorr, password=pass1, first=Richard, last=Orr]
+2019-07-31 15:41:22 TRACE Driver:39 - User [id=2, username=rorr, password=pass1, first=Richard, last=Orr]
+2019-07-31 15:41:34 TRACE Driver:39 - 
+2019-07-31 15:54:53 TRACE Driver:32 - [Genre [id=3, genre=Fiction], Genre [id=6, genre=Mystery], Genre [id=1, genre=Fantasy], Genre [id=2, genre=Non-Fiction], Genre [id=4, genre=Sci-Fi], Genre [id=5, genre=Historical Romance]]
+2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=3, genre=Fiction]
+2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=6, genre=Mystery]
+2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=1, genre=Fantasy]
+2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=2, genre=Non-Fiction]
+2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=4, genre=Sci-Fi]
+2019-07-31 15:55:26 TRACE Driver:33 - Genre [id=5, genre=Historical Romance]
