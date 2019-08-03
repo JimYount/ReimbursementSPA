@@ -1,0 +1,121 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6B22E131-2B93-A6A3-FD14-44F3CDF2C53D" schemaObject="28ED9928-B640-07E4-5BEA-CA0D72029BCC" name="OFFERS">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>OFFERS</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="OFFERID" id="757660D8-F323-1951-77AA-61C8E8116EBC">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>OFFERS</sourceObjSchema>
+<sourceObjName>OFFERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OFFERCARID" id="82D24FEE-9620-C634-D7CA-9FC895E897A7">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>OFFERS</sourceObjSchema>
+<sourceObjName>OFFERCARID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="82B3A3A1-248D-E0F0-B0E0-173C33E9F6E1" referredColumn="1118A84A-6E69-2B4D-8827-80AD520C9179"/>
+</associations>
+</Column>
+<Column name="OFFERCARUSERID" id="ADA86708-456D-5F75-9C75-AEBD6A09B8D8">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>OFFERS</sourceObjSchema>
+<sourceObjName>OFFERCARUSERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="3CABC0AF-A291-FFDE-864E-9E5755000A00" referredColumn="D22D18C9-D268-F5C2-DFAD-DCF495A4FF39"/>
+</associations>
+</Column>
+<Column name="OFFER" id="1B811B32-162E-D146-B9E7-8C602E850C44">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>OFFERS</sourceObjSchema>
+<sourceObjName>OFFER</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7E921D29-4C87-D415-7AA0-6E9E90E71AFA" name="PK_OFFERID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>PK_OFFERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="757660D8-F323-1951-77AA-61C8E8116EBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7A7C777A-A925-1814-DD85-B9C1A663DD08" schemaObject="28ED9928-B640-07E4-5BEA-CA0D72029BCC" name="PK_OFFERID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>PK_OFFERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="757660D8-F323-1951-77AA-61C8E8116EBC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="507296B9-4890-2C16-E419-20738D669689" name="FK_OFFERCARID">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:55 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82D24FEE-9620-C634-D7CA-9FC895E897A7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5367AABC-7D7C-2BB4-1FD6-00E52BF0FCBF" name="FK_OFFERCARUSERID">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:55 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="ADA86708-456D-5F75-9C75-AEBD6A09B8D8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

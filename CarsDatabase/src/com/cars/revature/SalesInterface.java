@@ -13,7 +13,6 @@ public class SalesInterface {
 	private static String secondaryInput;
 	private static boolean invalid;
 	private static Scanner in;
-	private static Connection connection;
 	private static ResultSet result;
 
 	public static void main(String[] args) {
@@ -26,6 +25,7 @@ public class SalesInterface {
 		int userID = 0;
 		int userLevel = 0;
 		int availableOptions = 0;
+		String input3 = "";
 
 		try (Connection connection = DriverManager.getConnection(
 				"jdbc:oracle:thin:@carsales.cskckr7v2ody.us-east-2.rds.amazonaws.com:1521:ORCL", "jimayount",
@@ -33,49 +33,64 @@ public class SalesInterface {
 
 			connection.setAutoCommit(false);
 
-			while (true) {
+			while (!input.equalsIgnoreCase("exit")) {
 				do {
-					if (invalid)
-						System.out.println("\n\nInvalid login, please re-enter.\n");
+					do {
+						if (invalid)
+							System.out.println("\n\nInvalid entry, please re-enter.\n");
 
-					System.out.println("Type a number for the corresponding option.");
-					System.out.println("1. Log In");
-					System.out.println("2. Register");
-					input = in.nextLine();
-					if (Integer.parseInt(input) == 2) {
-						result = addUser(1, "your");
-					} else if (Integer.parseInt(input) == 1) {
+						System.out.println("Type a number for the corresponding option.");
+						System.out.println("1. Log In");
+						System.out.println("2. Register");
+						input3 = in.nextLine();
+						
+						if (input.equalsIgnoreCase("exit")) {
+							in.close();
+							return;
+						}
+							
+						if (input3.matches("[0-9]+")) {
+							if (Integer.parseInt(input3) == 2) {
+								result = addUser(connection, 1, "your");
+							} else if (Integer.parseInt(input3) == 1) {
+								System.out.println("Please Log in\n");
+								System.out.println("Username:");
+								input = in.nextLine();
+								System.out.println("Password:");
+								secondaryInput = in.nextLine();
+								
+								result = getResult(connection
+										.prepareStatement("SELECT " + "CarUserID, FirstName, LastName, AccountType "
+												+ "FROM CarUsers" + " WHERE UserName = '" + input
+												+ "' AND Password = '" + secondaryInput + "'"));
+							}
 
-						System.out.println("Please Log in\n");
-						System.out.println("Username:");
-						input = in.nextLine();
-						System.out.println("Password:");
-						secondaryInput = in.nextLine();
+									
+						}
 
-						result = getResult(connection
-								.prepareStatement("SELECT " + "CarUserID, Name, AccountType " + "FROM CarUsers"
-										+ " WHERE UserName = '" + input + "' AND Password = '" + secondaryInput + "'"));
-					}
+						invalid = true;
+					} while (result == null);
 				} while (!result.next());
 
 				userID = result.getInt("CarUserID");
 				userLevel = result.getInt("AccountType");
+				invalid = false;
 
 				do {
 					if (!secondTime) {
-						System.out.println("Welcome, ");
+						System.out.print("\nWelcome, ");
 						switch (userLevel) {
 						case 1:
-							System.out.println("customer ");
+							System.out.print("customer ");
 							break;
 						case 2:
-							System.out.println("employee ");
+							System.out.print("employee ");
 							break;
 						case 3:
-							System.out.println("owner ");
+							System.out.print("owner ");
 							break;
 						}
-						System.out.println(result.getString("Name") + "!");
+						System.out.print(result.getString("FirstName") + " " + result.getString("LastName") + "!\n\n");
 					}
 
 					secondTime = true;
@@ -98,7 +113,6 @@ public class SalesInterface {
 						availableOptions = 8;
 					}
 					if (userLevel == 3) {
-						System.out.println("exit. Log Out");
 						System.out.println("1. See All Available Cars");
 						System.out.println("2. Calculate Monthly Yield");
 						System.out.println("3. Add a Customer");
@@ -112,71 +126,75 @@ public class SalesInterface {
 						availableOptions = 10;
 					}
 					input = in.nextLine();
+					System.out.println();
 
-					switch (Integer.parseInt(input)) {
-					case 1:
-						showQuery(connection.prepareStatement("SELECT * FROM Cars WHERE OwnerID = NULL"));
-						break;
-					case 2:
-						if (userLevel == 1 || userLevel == 2) {
-							showQuery(connection
-									.prepareStatement("SELECT Price/PayMonths FROM Cars WHERE OwnerID != NULL"));
-							input = buyCar(userID);
-						} else if (userLevel == 3) {
-							System.out.println("Monthly Yield:" + getResultInt(connection
-									.prepareStatement("SELECT SUM(Price/PayMonths) FROM Cars WHERE OwnerID != NULL")));
+					if (input.matches("[0-9]+")) {
+						switch (Integer.parseInt(input)) {
+						case 1:
+							showQuery(connection.prepareStatement("SELECT * FROM Cars WHERE OwnerID IS NULL"));
+							break;
+						case 2:
+							if (userLevel == 1 || userLevel == 2) {
+								showQuery(connection
+										.prepareStatement("SELECT Price/PayMonths FROM Cars WHERE OwnerID IS NOT NULL"));
+								input = buyCar(connection, userID);
+							} else if (userLevel == 3) {
+								System.out.println("Monthly Yield:" + getResultInt(connection.prepareStatement(
+										"SELECT SUM(Price/PayMonths) FROM Cars WHERE OwnerID IS NOT NULL")));
+							}
+							break;
+						case 3:
+							if (userLevel == 1 || userLevel == 2) {
+								showQuery(connection.prepareStatement("SELECT * FROM Cars WHERE OwnerID = " + userID));
+							} else if (userLevel == 3) {
+								addUser(connection, 1, "the customer's");
+							}
+							break;
+						case 4:
+							if (userLevel == 1 || userLevel == 2) {
+								System.out.println("You owe: "
+										+ getResultInt(connection.prepareStatement(
+												"SELECT SUM(Price) FROM Cars WHERE OwnerID = " + userID))
+										+ " at a rate of "
+										+ getResultInt(connection.prepareStatement(
+												"SELECT SUM(Price/PayMonths) FROM Cars WHERE OwnerID = " + userID))
+										+ " per month.");
+							} else if (userLevel == 3) {
+								input = removeAsset(connection, "CarUsers", "CarUserID", "AND AccountType = 1",
+										" WHERE AccountType = '1'");
+							}
+							break;
+						case 5:
+							showQuery(connection.prepareStatement("SELECT * FROM Offers"));
+							input = manageOffers(connection);
+							break;
+						case 6:
+							addCar(connection);
+							break;
+						case 7:
+							input = removeAsset(connection, "Cars", "CarID", "", "");
+							break;
+						case 8:
+							showQuery(connection.prepareStatement("SELECT * FROM Payments"));
+							break;
+						case 9:
+							addUser(connection, 2, "the employee's");
+							break;
+						case 10:
+							input = removeAsset(connection, "CarUsers", "CarUserID", "AND AccountType = 2",
+									" WHERE AccountType = '2'");
+							break;
 						}
-						break;
-					case 3:
-						if (userLevel == 1 || userLevel == 2) {
-							showQuery(connection.prepareStatement("SELECT * FROM Cars WHERE OwnerID = " + userID));
-						} else if (userLevel == 3) {
-							addUser(1, "the customer's");
-						}
-						break;
-					case 4:
-						if (userLevel == 1 || userLevel == 2) {
-							System.out.println("You owe: "
-									+ getResultInt(connection
-											.prepareStatement("SELECT SUM(Price) FROM Cars WHERE OwnerID = " + userID))
-									+ " at a rate of "
-									+ getResultInt(connection.prepareStatement(
-											"SELECT SUM(Price/PayMonths) FROM Cars WHERE OwnerID = " + userID))
-									+ " per month.");
-						} else if (userLevel == 3) {
-							showQuery(connection.prepareStatement("SELECT * FROM CarUsers WHERE AccountType = '1'"));
-							input = removeAsset("CarUsers", "CarUserID", "AND AccountType = 1");
-						}
-						break;
-					case 5:
-						showQuery(connection.prepareStatement("SELECT * FROM Offers"));
-						input = manageOffers();
-						break;
-					case 6:
-						addCar();
-						break;
-					case 7:
-						showQuery(connection.prepareStatement("SELECT * FROM Cars"));
-						input = removeAsset("Cars", "CarID", "");
-						break;
-					case 8:
-						showQuery(connection.prepareStatement("SELECT * FROM Payments"));
-						break;
-					case 9:
-						addUser(2, "the employee's");
-						break;
-					case 10:
-						showQuery(connection.prepareStatement("SELECT * FROM CarUsers WHERE AccountType = '2'"));
-						input = removeAsset("CarUsers", "CarUserID", "AND AccountType = 2");
-						break;
 					}
 
-					if (input.equalsIgnoreCase("exit"))
+					if (input.equalsIgnoreCase("log") || input.equalsIgnoreCase("exit"))
 						break;
 
-					if (Integer.parseInt(input) > availableOptions || Integer.parseInt(input) <= 0)
-						invalid = true;
-				} while (!input.equalsIgnoreCase("exit"));
+					if (input.matches("[0-9]+")) {
+						if (Integer.parseInt(input) > availableOptions || Integer.parseInt(input) <= 0)
+							invalid = true;
+					}
+				} while (!input.equalsIgnoreCase("log") || input.equalsIgnoreCase("exit"));
 			}
 
 		} catch (SQLException e) {
@@ -206,34 +224,38 @@ public class SalesInterface {
 
 		while (result.next()) {
 			System.out.println();
-			for (int i = 0; i < meta.getColumnCount(); i++) {
-				System.out.print(result.getString(i));
+			for (int i = 1; i < meta.getColumnCount(); i++) {
+				System.out.print(result.getString(i) + "  ");
 			}
-			System.out.println();
 
 			gotQuery = true;
 		}
+		System.out.println();
+		System.out.println();
 
 		return gotQuery;
 	}
 
-	private static String removeAsset(String table, String conditionField, String additionalCondition)
-			throws SQLException {
+	private static String removeAsset(Connection connection, String table, String conditionField,
+			String additionalCondition, String showCondition) throws SQLException {
 		invalid = false;
 
 		do {
 			showStandardOptions("show back");
 
-			System.out.println("Type the number you want to remove.");
+			showQuery(connection.prepareStatement("SELECT * FROM " + table + showCondition));
+
+			System.out.println("Type the number that you want to remove:");
 			input = in.nextLine();
 
-			if (input.equalsIgnoreCase("exit"))
+			if (input.equalsIgnoreCase("log") || input.equalsIgnoreCase("exit"))
 				return input;
 			else if (input.equalsIgnoreCase("back"))
 				return "1";
 
 			if (!getResult(connection.prepareStatement(
-					"SELECT FROM " + table + " WHERE " + conditionField + " = " + input + additionalCondition)).next())
+					"SELECT * FROM " + table + " WHERE " + conditionField + " = " + input + " " + additionalCondition))
+							.next())
 				invalid = true;
 			else {
 				getResult(connection.prepareStatement(
@@ -241,12 +263,12 @@ public class SalesInterface {
 				// getResult(connection.prepareStatement("ALTER TABLE " + table + "
 				// AUTO_INCREMENT=1"));
 			}
-		} while (!input.equalsIgnoreCase("back") && !input.equalsIgnoreCase("exit"));
+		} while (!input.equalsIgnoreCase("back") && !input.equalsIgnoreCase("log") && !input.equalsIgnoreCase("exit"));
 
 		return "1";
 	}
 
-	private static String buyCar(int userID) throws SQLException {
+	private static String buyCar(Connection connection, int userID) throws SQLException {
 		invalid = false;
 
 		do {
@@ -255,13 +277,13 @@ public class SalesInterface {
 			System.out.println("Which car do you want to buy?");
 			input = in.nextLine();
 
-			if (input.equalsIgnoreCase("exit"))
+			if (input.equalsIgnoreCase("log") || input.equalsIgnoreCase("exit"))
 				return input;
 			else if (input.equalsIgnoreCase("back"))
 				return "2";
 			else if (Integer.parseInt(input) > 0) {
 				if (showQuery(connection
-						.prepareStatement("SELECT * FROM Cars WHERE OwnerID != NULL AND CarID = '" + input + "'"))) {
+						.prepareStatement("SELECT * FROM Cars WHERE OwnerID IS NOT NULL AND CarID = '" + input + "'"))) {
 					System.out.println("What is your offer?");
 					secondaryInput = in.nextLine();
 
@@ -281,7 +303,7 @@ public class SalesInterface {
 		return "2";
 	}
 
-	private static String manageOffers() throws SQLException {
+	private static String manageOffers(Connection connection) throws SQLException {
 		invalid = false;
 		String input3 = "";
 
@@ -291,7 +313,7 @@ public class SalesInterface {
 			System.out.println("Which offer do you want to modify?");
 			input = in.nextLine();
 
-			if (input.equalsIgnoreCase("exit"))
+			if (input.equalsIgnoreCase("log") || input.equalsIgnoreCase("exit"))
 				return input;
 			else if (input.equalsIgnoreCase("back"))
 				return "5";
@@ -337,38 +359,47 @@ public class SalesInterface {
 		return "5";
 	}
 
-	private static void addCar() throws SQLException {
+	private static void addCar(Connection connection) throws SQLException {
+		String input1 = "";
+		String input2 = "";
 		String input3 = "";
 		String input4 = "";
 		String input5 = "";
+		String input6 = "";
 
 		System.out.println("What is the car's make?");
-		input = in.nextLine();
+		input1 = in.nextLine();
 		System.out.println("What is the car's model?");
-		secondaryInput = in.nextLine();
-		System.out.println("What year was the car made?");
+		input2 = in.nextLine();
+		System.out.println("What is the car's color?");
 		input3 = in.nextLine();
-		System.out.println("What is the baseline price for the car?");
+		System.out.println("What year was the car made?");
 		input4 = in.nextLine();
-		System.out.println("What is the url of the picture?");
+		System.out.println("What is the baseline price for the car?");
 		input5 = in.nextLine();
+		System.out.println("What is the url of the picture?");
+		input6 = in.nextLine();
 
-		getResult(connection.prepareStatement("INSERT INTO Cars (Make, Model, Year, Price, PicURL) VALUES (" + input
-				+ ", " + secondaryInput + ", " + input3 + ", " + input4 + ", " + input5 + ")"));
+		getResult(connection.prepareStatement("INSERT INTO Cars (Make, Model, Color, Year, Price, PicURL) VALUES ('" + input1
+				+ "', '" + input2 + "', '" + input3 + "', '" + input4 + "', '" + input5 + "', '" + input6 + "')"));
+		
+		getResult(connection.prepareStatement("COMMIT"));
 
 		return;
 	}
 
-	private static ResultSet addUser(int level, String addressUser) throws SQLException {
+	private static ResultSet addUser(Connection connection, int level, String addressUser) throws SQLException {
+		String input1 = "";
+		String input2 = "";
 		String input3 = "";
 		String input4 = "";
 		String input5 = "";
 		invalid = false;
 
 		System.out.println("What is " + addressUser + " first name?");
-		input = in.nextLine();
+		input1 = in.nextLine();
 		System.out.println("What is " + addressUser + " last name?");
-		secondaryInput = in.nextLine();
+		input2 = in.nextLine();
 		System.out.println("Type a username");
 		input3 = in.nextLine();
 
@@ -382,15 +413,20 @@ public class SalesInterface {
 			input5 = in.nextLine();
 
 			invalid = true;
-		} while (input4.contentEquals(input5));
+		} while (!input4.contentEquals(input5));
+
+		getResult(connection.prepareStatement(
+				"INSERT INTO CarUsers (FirstName, LastName, UserName, Password, AccountType) VALUES ('" + input1
+						+ "', '" + input2 + "', '" + input3 + "', '" + input4 + "', '" + level + "')"));
 
 		return getResult(connection
-				.prepareStatement("INSERT INTO CarUsers (FirstName, LastName, UserName, Password, AccountType) VALUES ("
-						+ input + ", " + secondaryInput + ", " + input3 + ", " + input4 + ", " + level + ")"));
+				.prepareStatement("SELECT " + "CarUserID, FirstName, LastName, AccountType "
+						+ "FROM CarUsers" + " WHERE UserName = '" + input3
+						+ "' AND Password = '" + input4 + "'"));
 	}
 
 	private static void showStandardOptions(String back) {
-		System.out.println("Type exit at any time to log out.");
+		System.out.println("\nType log at any time to log out.");
 		if (back.equalsIgnoreCase("show back"))
 			System.out.println("Type back to go back to main menu.");
 
