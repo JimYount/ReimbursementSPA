@@ -4,4 +4,24 @@
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
   </welcome-file-list>
+  
+  <!-- web.xml is our Deployment Descriptor
+  		This file dictates how our servlet environment should be set up
+  		It's essentially a properties file.
+  		
+  		This file tells the server how to set up the application
+  		 -->
+  <servlet>
+  	<servlet-name>Bob</servlet-name>
+  	<servlet-class>com.revature.servlets.HelloServlet</servlet-class>
+  	<load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Bob</servlet-name>
+  	<url-pattern>/hello</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Bob</servlet-name>
+  	<url-pattern>/aloha</url-pattern>
+  </servlet-mapping>	
 </web-app>
