@@ -1,0 +1,44 @@
+/*
+    My CSS file!
+    Cascading Style Sheets allow us to apply styling to a webpage
+    We can style every tag of a specific type
+                every tag with a specific id
+                every tag with a specidic class
+                every child of a specific tag
+*/
+.dispute {
+    background-color: orange;
+}
+h1 {
+    background-color: green;
+}
+
+tr > .goodbye {
+    background-color: purple;
+}
+
+/*
+Classses: Reusable names that allow you to select a group of elements
+    You use the . operator */
+tr > .hello {
+    color: cyan;
+    background-color: teal;
+}
+
+.hello {
+    color: orange;
+}
+.goodbye {
+    color: green;
+}
+
+/* IDs: unique names that style a specific element
+    They use the # operator */
+#orr {
+    color: magenta;
+    background-color:navy;
+}
+
+body {
+    background-image: url("aws.png");
+}
