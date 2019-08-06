@@ -48,4 +48,41 @@
   	<servlet-name>out</servlet-name>
   	<url-pattern>/logout</url-pattern>
   </servlet-mapping>
+  <servlet>
+  	<servlet-name>bean</servlet-name>
+  	<servlet-class>com.revature.servlets.BeanServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>bean</servlet-name>
+  	<url-pattern>/bean</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  	<servlet-name>cc1</servlet-name>
+  	<servlet-class>com.revature.cc.ConfigContext</servlet-class>
+  	<init-param>
+  		<param-name>cheese</param-name>
+  		<param-value>Manchego</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cc1</servlet-name>
+  	<url-pattern>/cc1</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>cc2</servlet-name>
+  	<servlet-class>com.revature.cc.ConfigContext</servlet-class>
+  	<init-param>
+  		<param-name>cheese</param-name>
+  		<param-value>Brie</param-value>
+  	</init-param>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>cc2</servlet-name>
+  	<url-pattern>/cc2</url-pattern>
+  </servlet-mapping>
+  <context-param>
+  	<param-name>cheese</param-name>
+  	<param-value>Bleu</param-value>
+  </context-param>
 </web-app>
