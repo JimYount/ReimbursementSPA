@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="JIMAYOUNT" directorySegmentName="seg_0" id="8F3C2528-039A-68A4-F2E6-B52038602AE8">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjName>JIMAYOUNT</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:51 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<schemaObject>28ED9928-B640-07E4-5BEA-CA0D72029BCC</schemaObject>
+</UserOraclev10g>

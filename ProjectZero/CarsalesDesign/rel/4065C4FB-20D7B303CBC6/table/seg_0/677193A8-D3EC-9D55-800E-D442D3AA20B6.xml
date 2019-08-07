@@ -1,0 +1,129 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="677193A8-D3EC-9D55-800E-D442D3AA20B6" schemaObject="28ED9928-B640-07E4-5BEA-CA0D72029BCC" name="CARUSERS">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>CARUSERS</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CARUSERID" id="D22D18C9-D268-F5C2-DFAD-DCF495A4FF39">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARUSERS</sourceObjSchema>
+<sourceObjName>CARUSERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FIRSTNAME" id="F26491BC-1379-9B9C-F234-17F459725649">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARUSERS</sourceObjSchema>
+<sourceObjName>FIRSTNAME</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LASTNAME" id="FC622AE2-07F8-FB7D-913A-6C4DEFE40215">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARUSERS</sourceObjSchema>
+<sourceObjName>LASTNAME</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="USERNAME" id="53734FA6-F386-FF10-E20E-6E84BD1558D6">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARUSERS</sourceObjSchema>
+<sourceObjName>USERNAME</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWORD" id="7D64C19C-6E41-A17E-5302-DBB6772564A1">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARUSERS</sourceObjSchema>
+<sourceObjName>PASSWORD</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ACCOUNTTYPE" id="6BF27726-430F-CC05-D0D7-722CE64C0705">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARUSERS</sourceObjSchema>
+<sourceObjName>ACCOUNTTYPE</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="679BD19C-2B70-D95B-2C07-E8E2D383002E" name="PK_CARUSERID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>PK_CARUSERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D22D18C9-D268-F5C2-DFAD-DCF495A4FF39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DFBAD8C1-8968-E42C-6B06-37463ABDFDA5" schemaObject="28ED9928-B640-07E4-5BEA-CA0D72029BCC" name="PK_CARUSERID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>PK_CARUSERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D22D18C9-D268-F5C2-DFAD-DCF495A4FF39"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

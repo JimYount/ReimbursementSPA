@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TriggerOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.TriggerOraclev10g" name="CARUSER_PK_TRIG" directorySegmentName="seg_0" id="41C6A4D9-56A7-68A9-DC7B-6811EDD5240F">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>CARUSER_PK_TRIG</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<actions>INSERT, UPDATE</actions>
+<body>begin&lt;br/&gt;    if INSERTING then&lt;br/&gt;        select carUser_seq.nextVal into :new.CarUserID from dual;&lt;br/&gt;    elsif UPDATING then&lt;br/&gt;        select :old.CarUserID into :new.CarUserID from dual;&lt;br/&gt;    end if;&lt;br/&gt;end;&lt;br/&gt;</body>
+<triggerTime>BEFORE</triggerTime>
+<owner>8F3C2528-039A-68A4-F2E6-B52038602AE8</owner>
+<table>677193A8-D3EC-9D55-800E-D442D3AA20B6</table>
+</TriggerOraclev10g>
