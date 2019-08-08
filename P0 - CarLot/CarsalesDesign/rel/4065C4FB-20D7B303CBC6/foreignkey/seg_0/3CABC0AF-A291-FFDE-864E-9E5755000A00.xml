@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="3CABC0AF-A291-FFDE-864E-9E5755000A00" containerWithKeyObject="6B22E131-2B93-A6A3-FD14-44F3CDF2C53D" localFKIndex="5367AABC-7D7C-2BB4-1FD6-00E52BF0FCBF" name="FK_OFFERCARUSERID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>FK_OFFERCARUSERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:55 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<referredTableLongName>JIMAYOUNT.CARUSERS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>677193A8-D3EC-9D55-800E-D442D3AA20B6</referredTableID>
+<keyObject>679BD19C-2B70-D95B-2C07-E8E2D383002E</keyObject>
+<referredKeyID>679BD19C-2B70-D95B-2C07-E8E2D383002E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CARUSERID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

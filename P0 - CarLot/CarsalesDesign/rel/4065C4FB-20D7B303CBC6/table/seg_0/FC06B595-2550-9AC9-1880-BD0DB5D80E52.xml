@@ -1,0 +1,196 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FC06B595-2550-9AC9-1880-BD0DB5D80E52" schemaObject="28ED9928-B640-07E4-5BEA-CA0D72029BCC" name="CARS">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>CARS</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:51 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CARID" id="1118A84A-6E69-2B4D-8827-80AD520C9179">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>CARID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="F63B7C33-DF64-F0AE-487A-4302EFFFCAD8">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PAYMONTHS" id="FAA2BD9B-CA99-7C01-D736-323B182DA17C">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>PAYMONTHS</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MAKE" id="AA456A45-BB6C-F616-0258-75E57D0BA9A7">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>MAKE</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MODEL" id="F8A3201C-3E6E-505D-C61C-E48544A781AF">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>MODEL</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="YEAR" id="03A7152A-7C4F-0CD7-E343-8FDEC7BFBC5B">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>YEAR</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="OWNERID" id="B7B89370-EA01-0618-345C-BF8A8F9BCB0B">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>OWNERID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="398AACB7-FBD0-3A66-3EE5-431A3A36AA5F" referredColumn="D22D18C9-D268-F5C2-DFAD-DCF495A4FF39"/>
+</associations>
+</Column>
+<Column name="BOUGHTYEAR" id="5430EA0C-7290-C517-D3BF-A1BFA399FD1B">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>BOUGHTYEAR</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BOUGHTMONTH" id="8733EA05-063E-A684-C79F-121D7F7CB3E7">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>BOUGHTMONTH</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PICURL" id="0FC3C4E7-396E-CE1E-65CE-5AA1A5FF72E2">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>CARS</sourceObjSchema>
+<sourceObjName>PICURL</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>120 BYTE</dataTypeSize>
+<ownDataTypeParameters>120 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E02B8ACA-E6EC-D125-26CB-8B4DE397C1C1" name="PK_CARID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>PK_CARID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1118A84A-6E69-2B4D-8827-80AD520C9179"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="BE55A580-4B58-63FC-1CC6-E39A2FC81EA9" schemaObject="28ED9928-B640-07E4-5BEA-CA0D72029BCC" name="PK_CARID">
+<sourceConnName>carsales</sourceConnName>
+<sourceObjSchema>JIMAYOUNT</sourceObjSchema>
+<sourceObjName>PK_CARID</sourceObjName>
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1118A84A-6E69-2B4D-8827-80AD520C9179"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D9E47DDD-28C9-5916-5718-7200EB9AF3B3" name="FK_OWNERID">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:55 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B7B89370-EA01-0618-345C-BF8A8F9BCB0B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

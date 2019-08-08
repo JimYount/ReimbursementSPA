@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="OFFERS" directorySegmentName="seg_0" id="6B22E131-2B93-A6A3-FD14-44F3CDF2C53D">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:52 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<schemaObject>28ED9928-B640-07E4-5BEA-CA0D72029BCC</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>0AFD54D5-2813-B37A-0078-105325C4238A</segment>
+<tableSpace>2A3676FC-981B-9D5F-4BDD-499952796C43</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="OFFER" id="1B811B32-162E-D146-B9E7-8C602E850C44">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OFFERID" id="757660D8-F323-1951-77AA-61C8E8116EBC">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OFFERCARID" id="82D24FEE-9620-C634-D7CA-9FC895E897A7">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="OFFERCARUSERID" id="ADA86708-456D-5F75-9C75-AEBD6A09B8D8">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:53 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PK_OFFERID" id="7A7C777A-A925-1814-DD85-B9C1A663DD08">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<schemaObject>28ED9928-B640-07E4-5BEA-CA0D72029BCC</schemaObject>
+<segment>DEF10CF1-BAB2-4571-BC62-AC526C27FE9C</segment>
+<tableSpace>2A3676FC-981B-9D5F-4BDD-499952796C43</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_OFFERCARID" id="507296B9-4890-2C16-E419-20738D669689">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:55 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_OFFERCARUSERID" id="5367AABC-7D7C-2BB4-1FD6-00E52BF0FCBF">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:55 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_OFFERID" id="7E921D29-4C87-D415-7AA0-6E9E90E71AFA">
+<createdBy>Jim</createdBy>
+<createdTime>2019-08-02 17:24:54 UTC</createdTime>
+<ownerDesignName>CarsalesDesign</ownerDesignName>
+<segment>DEF10CF1-BAB2-4571-BC62-AC526C27FE9C</segment>
+<tableSpace>2A3676FC-981B-9D5F-4BDD-499952796C43</tableSpace>
+<existingIndex>7A7C777A-A925-1814-DD85-B9C1A663DD08</existingIndex>
+<indexSegment>DEF10CF1-BAB2-4571-BC62-AC526C27FE9C</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>
