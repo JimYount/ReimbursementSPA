@@ -38,6 +38,9 @@ function getPokemon(){
            let response = xhttp.responseText;
            response = JSON.parse(response);
            populateDex(response);
+       } else {
+           // Either loading/processing or failed
+           document.getElementById("pokemonImg").setAttribute("src", "img/RotatingPokeball.gif");
        }
     }
 }

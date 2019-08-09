@@ -38,8 +38,6 @@ public class RequestDispatcher {
 			});
 		delegateMap.put("editBook", 
 			(req, resp) -> {
-				if(req.getAttribute("path")!=null)
-					resp.sendError(HttpServletResponse.SC_BAD_REQUEST);
 				req.getRequestDispatcher("/static/editbook.html").forward(req,resp);
 			});
 	}

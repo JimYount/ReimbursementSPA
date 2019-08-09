@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="ISO-8859-1">
+    <title>Editing Book</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Modifying your book!</h1>
+        <div class="formgroup">
+            <label for="b_title">Title:</label> <input class="form-control simple-book" type="text" id="b_title" /> <br>
+        </div>
+        <div class="formgroup">
+            <label for="b_cover">Cover:</label> <input class="form-control simple-book" type="text" id="b_cover" /> <br>
+        </div>
+        <div class="formgroup">
+            <label for="b_isbn10">ISBN10:</label> <input class="form-control simple-book" type="text" id="b_isbn10" />
+            <br>
+        </div>
+        <div class="formgroup">
+            <label for="b_isbn13">ISBN13:</label> <input class="form-control simple-book" type="text" id="b_isbn13" />
+            <br>
+        </div>
+        <div class="formgroup">
+            <label for="b_authors">Authors: </label> <select class="form-control" id="b_authors">
+                <option selected="true">Choose an Author</option>
+            </select>
+            <ul id="selectedAuthors">
+
+            </ul>
+        </div>
+        <div class="formgroup">
+            <label for="b_genres">Genres: </label> <select class="form-control" id="b_genres">
+                <option selected="true">Choose a Genre</option>
+            </select>
+            <ul id="selectedGenres">
+
+            </ul>
+        </div>
+        <div class="formgroup">
+            <label for="b_price">Price:</label> <input class="form-control simple-book" type="number" id="b_price" />
+            <br>
+        </div>
+        <div class="formgroup">
+            <label for="b_stock">Stock:</label> <input class="form-control simple-book" type="number" id="b_stock" />
+            <br>
+        </div>
+        <button type="submit" class="btn btn-primary emp-btn" id="submitbtn" disabled>Submit</button>
+        <button type="submit" class="btn btn-danger" id="backbtn">Cancel</button>
+    </div>
+    <script type="text/javascript" src="/BookStore/static/js/editbook.js"></script>
+    <script type="text/javascript" src="/BookStore/static/js/login.js"></script>
+
+</body>
+
+</html>
