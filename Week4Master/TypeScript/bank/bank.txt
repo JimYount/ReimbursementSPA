@@ -1,0 +1,15 @@
+Using the command line interface of node, build a very simple bank application.
+
+Features:
+    Hard-coded users array, containing a few users.
+    Able to log-in.
+    Able to withdraw and deposit.
+
+Requirements:
+    User.ts which defines and exports a User object
+    Account.ts which defines and exports an Account object
+    Bank.ts which imports Users and Accounts and which will actually be executed
+
+commands which might be helpful
+tsc bank.ts: should compile all three files.
+node bank.js: should run your app.

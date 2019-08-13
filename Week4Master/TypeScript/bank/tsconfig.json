@@ -1,0 +1,8 @@
+{
+    "files": [
+        "bank.ts"
+    ],
+    "compilerOptions":{
+        "target": "es5"
+    }
+}
