@@ -1,5 +1,9 @@
+<<<<<<< HEAD
 import { Account } from './account';
 import { User } from './user';
+=======
+import {Account} from './account';
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 
 // Here is how to do a user interface in node.js
 const readline = require('readline');
@@ -9,6 +13,7 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
+<<<<<<< HEAD
 let u = new User();
 let acct = new Account();
 
@@ -16,6 +21,10 @@ var username;
 var password;
 var index;
 var input;
+=======
+var username;
+var password;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 main();
 
 function main() {
@@ -24,6 +33,7 @@ function main() {
 
 function login() {
     rl.question("Input your username: ", (answer) => {
+<<<<<<< HEAD
         username = answer;
         getPassword();
     });
@@ -32,10 +42,21 @@ function getPassword() {
     rl.question("Input your password: ", (answer) => {
         password = answer;
         checkUser();
+=======
+        username= answer;
+        getPassword();
+    });
+}
+function getPassword(){
+    rl.question("Input your password: ", (answer) =>{
+        password = answer;
+        displayUser();
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
     })
 }
 
 function displayUser() {
+<<<<<<< HEAD
     console.log("");
     console.log("");
     console.log("Welcome, " + u.users[index][2] + " " + u.users[index][3]);
@@ -114,3 +135,8 @@ function manageAccount() {
     })
 
 }
+=======
+    console.log(username+" "+password);
+    process.exit();
+}
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d

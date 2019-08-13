@@ -1,5 +1,6 @@
 package com.revature.eval.java.core;
 
+<<<<<<< HEAD
 import java.math.BigInteger;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
@@ -12,6 +13,11 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+=======
+import java.time.temporal.Temporal;
+import java.util.List;
+import java.util.Map;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 
 public class EvaluationService {
 
@@ -24,7 +30,11 @@ public class EvaluationService {
 	 */
 	public String reverse(String string) {
 		char[] reversed = new char[string.length()];
+<<<<<<< HEAD
 		for (int i = reversed.length - 1, j = 0; i >= 0; i--, j++) {
+=======
+		for (int i = reversed.length - 1, j=0; i >= 0; i--, j++) {
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 			reversed[j] = string.charAt(i);
 		}
 		return new String(reversed);
@@ -39,6 +49,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public String acronym(String phrase) {
+<<<<<<< HEAD
 		// Jim-written
 
 		if (phrase == "") {
@@ -54,6 +65,10 @@ public class EvaluationService {
 		}
 
 		return acronym;
+=======
+		// TODO Write an implementation for this method declaration
+		return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -106,16 +121,21 @@ public class EvaluationService {
 		}
 
 		public boolean isEquilateral() {
+<<<<<<< HEAD
 			// Jim-written
 
 			if (this.getSideOne() == this.getSideTwo() && this.getSideTwo() == this.getSideThree()) {
 				return true;
 			}
 
+=======
+			// TODO Write an implementation for this method declaration
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 			return false;
 		}
 
 		public boolean isIsosceles() {
+<<<<<<< HEAD
 			// Jim-written
 
 			if (this.getSideOne() == this.getSideTwo() || this.getSideTwo() == this.getSideThree()
@@ -123,10 +143,14 @@ public class EvaluationService {
 				return true;
 			}
 
+=======
+			// TODO Write an implementation for this method declaration
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 			return false;
 		}
 
 		public boolean isScalene() {
+<<<<<<< HEAD
 			// Jim-written
 
 			if (!(this.getSideOne() == this.getSideTwo() || this.getSideTwo() == this.getSideThree()
@@ -134,6 +158,9 @@ public class EvaluationService {
 				return true;
 			}
 
+=======
+			// TODO Write an implementation for this method declaration
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 			return false;
 		}
 
@@ -155,6 +182,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public int getScrabbleScore(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		int score = 0;
@@ -204,6 +232,10 @@ public class EvaluationService {
 		}
 
 		return score;
+=======
+		// TODO Write an implementation for this method declaration
+		return 0;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -238,6 +270,7 @@ public class EvaluationService {
 	 * NANP-countries, only 1 is considered a valid country code.
 	 */
 	public String cleanPhoneNumber(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		String number = "";
@@ -273,6 +306,10 @@ public class EvaluationService {
 		}
 
 		return number;
+=======
+		// TODO Write an implementation for this method declaration
+		return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -285,6 +322,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public Map<String, Integer> wordCount(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		Map<String, Integer> wordCount = new HashMap<>();
@@ -300,6 +338,10 @@ public class EvaluationService {
 		}
 
 		return wordCount;
+=======
+		// TODO Write an implementation for this method declaration
+		return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -337,6 +379,7 @@ public class EvaluationService {
 	 * binary search is a dichotomic divide and conquer search algorithm.
 	 * 
 	 */
+<<<<<<< HEAD
 	static class BinarySearch<T> implements Comparable<T> {
 		private List<T> sortedList;
 		private int index;
@@ -364,6 +407,14 @@ public class EvaluationService {
 			}
 
 			return index;
+=======
+	static class BinarySearch<T> {
+		private List<T> sortedList;
+
+		public int indexOf(T t) {
+			// TODO Write an implementation for this method declaration
+			return 0;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 		}
 
 		public BinarySearch(List<T> sortedList) {
@@ -379,6 +430,7 @@ public class EvaluationService {
 			this.sortedList = sortedList;
 		}
 
+<<<<<<< HEAD
 		@Override
 		public int compareTo(T arg0) {
 			// Jim-written
@@ -391,6 +443,8 @@ public class EvaluationService {
 				return 0;
 		}
 
+=======
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -411,6 +465,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public String toPigLatin(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		String words[] = string.split("[\\W]");
@@ -479,6 +534,10 @@ public class EvaluationService {
 		}
 
 		return pigLatin;
+=======
+		// TODO Write an implementation for this method declaration
+		return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -497,6 +556,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public boolean isArmstrongNumber(int input) {
+<<<<<<< HEAD
 		// Jim-written
 
 		int inputCopy = input;
@@ -509,6 +569,10 @@ public class EvaluationService {
 		}
 
 		return input == armstrong;
+=======
+		// TODO Write an implementation for this method declaration
+		return false;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -522,6 +586,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public List<Long> calculatePrimeFactorsOf(long l) {
+<<<<<<< HEAD
 		// Jim-written
 
 		BigInteger checker = new BigInteger(String.valueOf(2));
@@ -536,6 +601,10 @@ public class EvaluationService {
 		}
 
 		return outList;
+=======
+		// TODO Write an implementation for this method declaration
+		return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -573,6 +642,7 @@ public class EvaluationService {
 		}
 
 		public String rotate(String string) {
+<<<<<<< HEAD
 			// Jim-written
 
 			String out = "";
@@ -594,6 +664,10 @@ public class EvaluationService {
 			}
 
 			return out;
+=======
+			// TODO Write an implementation for this method declaration
+			return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 		}
 
 	}
@@ -611,6 +685,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public int calculateNthPrime(int i) {
+<<<<<<< HEAD
 		// Jim-written
 
 		if (i <= 0) {
@@ -634,6 +709,10 @@ public class EvaluationService {
 		}
 
 		return prime;
+=======
+		// TODO Write an implementation for this method declaration
+		return 0;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -669,6 +748,7 @@ public class EvaluationService {
 		 * @return
 		 */
 		public static String encode(String string) {
+<<<<<<< HEAD
 			// Jim-written
 
 			String out = "";
@@ -698,6 +778,10 @@ public class EvaluationService {
 			}
 
 			return out;
+=======
+			// TODO Write an implementation for this method declaration
+			return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 		}
 
 		/**
@@ -707,6 +791,7 @@ public class EvaluationService {
 		 * @return
 		 */
 		public static String decode(String string) {
+<<<<<<< HEAD
 			// Jim-written
 
 			String out = "";
@@ -723,6 +808,10 @@ public class EvaluationService {
 			}
 
 			return out;
+=======
+			// TODO Write an implementation for this method declaration
+			return null;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 		}
 	}
 
@@ -749,6 +838,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public boolean isValidIsbn(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		int sum = 0;
@@ -769,6 +859,10 @@ public class EvaluationService {
 		}
 
 		return sum % 11 == 0;
+=======
+		// TODO Write an implementation for this method declaration
+		return false;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -785,6 +879,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public boolean isPangram(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		Set<Character> set = new HashSet<>(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l',
@@ -798,6 +893,10 @@ public class EvaluationService {
 		}
 
 		return set.isEmpty();
+=======
+		// TODO Write an implementation for this method declaration
+		return false;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -809,6 +908,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public Temporal getGigasecondDate(Temporal given) {
+<<<<<<< HEAD
 		// Jim-written
 
 		if (given instanceof LocalDate)
@@ -816,6 +916,9 @@ public class EvaluationService {
 		else if (given instanceof LocalDateTime)
 			return ((LocalDateTime) given).plusSeconds((long) Math.pow(10, 9));
 
+=======
+		// TODO Write an implementation for this method declaration
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 		return null;
 	}
 
@@ -833,6 +936,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public int getSumOfMultiples(int i, int[] set) {
+<<<<<<< HEAD
 		// Jim-written
 
 		int sum = 0;
@@ -851,6 +955,10 @@ public class EvaluationService {
 		}
 
 		return sum;
+=======
+		// TODO Write an implementation for this method declaration
+		return 0;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -890,6 +998,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public boolean isLuhnValid(String string) {
+<<<<<<< HEAD
 		// Jim-written
 		
 		string = string.replaceAll("\\s+", "");
@@ -915,6 +1024,10 @@ public class EvaluationService {
 		}
 
 		return sum % 10 == 0;
+=======
+		// TODO Write an implementation for this method declaration
+		return false;
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 	}
 
 	/**
@@ -945,6 +1058,7 @@ public class EvaluationService {
 	 * @return
 	 */
 	public int solveWordProblem(String string) {
+<<<<<<< HEAD
 		// Jim-written
 
 		string = string.replaceAll("\\?", "");
@@ -984,6 +1098,9 @@ public class EvaluationService {
 			return numbers[0] / numbers[1];
 		}
 
+=======
+		// TODO Write an implementation for this method declaration
+>>>>>>> fc020bd316d0d9ebc1e3773236205ad7d7643c3d
 		return 0;
 	}
 
