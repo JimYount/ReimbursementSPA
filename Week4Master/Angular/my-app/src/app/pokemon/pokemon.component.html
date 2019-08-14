@@ -1,0 +1,9 @@
+<div>
+  {{ pokemon.id + ': '+ pokemon.name | titlecase }}
+  <app-sprites *ngIf="pokemon.sprites" [sprites]="pokemon.sprites"></app-sprites>
+  <h2>{{ getTypeBySlot(1).type.name | titlecase }} </h2>
+  <h3 *ngIf="pokemon.types.length > 1">{{getTypeBySlot(2).type.name | uppercase }}</h3>
+  <p>Height: {{ pokemon.height }}</p>
+  <p>Weight: {{ pokemon.weight }}</p>
+  <app-stats [stats]="pokemon.stats"></app-stats>
+</div>

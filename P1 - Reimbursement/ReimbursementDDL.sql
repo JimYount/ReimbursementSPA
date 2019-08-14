@@ -16,6 +16,8 @@ CREATE TABLE Department
 CREATE TABLE Employees
 (
     EmployeeID NUMBER NOT NULL,
+    UserName VARCHAR2 (120) NOT NULL,
+    UserPass VARCHAR2 (120) NOT NULL,
     FirstName VARCHAR2 (120) NOT NULL,
     LastName VARCHAR2 (120) NOT NULL,
     Supervisor NUMBER,
@@ -55,9 +57,7 @@ CREATE TABLE Submission
     Justification VARCHAR2 (300) NOT NULL, 
     OptEvtAttach VARCHAR2 (120), 
     OptDaysMissed NUMBER,
-    SuperAppr NUMBER,
-    DeptAppr NUMBER,
-    BenCOAppr NUMBER,
+    Status NUMBER NOT NULL,
     Passed NUMBER,
     ApprSubDate DATE,
     CONSTRAINT PK_SubmissionID PRIMARY KEY  (SubmissionID),

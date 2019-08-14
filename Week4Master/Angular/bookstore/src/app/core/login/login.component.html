@@ -1,0 +1,34 @@
+<ng-container *ngIf="!loggedUser; else display">
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      Username:
+      <input type="text" [(ngModel)]="username">
+    </li>
+    <li class="nav-item">
+      Password:
+      <input type="password" [(ngModel)]="password" (keydown.enter)="login()">
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-primary" (click)="login()">Login</button>
+    </li>
+  </ul>
+</ng-container>
+
+<ng-template #display>
+  <ul class="navbar-nav mr-auto">
+    <li class="nav-item">
+      <div *ngIf="loggedUser.employee; else customer">
+        <span>Welcome {{loggedUser.employee.title}}!
+          {{loggedUser.employee.first + " " + loggedUser.employee.last}}</span>
+      </div>
+    </li>
+    <li class="nav-item">
+      <button class="btn btn-danger" (click)="logout()">Logout</button>
+    </li>
+  </ul>
+</ng-template>
+<ng-template #customer>
+  <div>
+    <span>Welcome Customer! {{loggedUser.customer.first + " " + loggedUser.customer.last}}</span>
+  </div>
+</ng-template>

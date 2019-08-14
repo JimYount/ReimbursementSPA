@@ -1,0 +1,25 @@
+<div class="container border">
+    <ng-container *ngIf="isEmployee(); else customer">
+      <div class="row">
+        <span class="col">First: </span>
+        <input class="col" type="text" [(ngModel)]="author.first">
+      </div>
+      <div class="row">
+        <span class="col">Last: </span>
+        <input class="col" type="text" [(ngModel)]="author.last">
+      </div>
+      <div class="row">
+        <span class="col">Blurb: </span>
+        <textarea class="col" [(ngModel)]="author.about"></textarea>
+      </div>
+      <button class="row btn btn-primary" (click)="updateAuthor()">Submit</button>
+    </ng-container>
+  </div>
+
+  <ng-template #customer>
+    <div>
+      <span class="font-weight-bold">Name: </span>{{author.first + " " + author.last }}
+      <br>
+      <span class="font-weight-bold">About the Author: </span>{{ author.about }}
+    </div>
+  </ng-template>

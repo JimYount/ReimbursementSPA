@@ -1,0 +1,64 @@
+<div class="container border" *ngIf="book">
+    <form>
+      <div class="row">
+        <div class="col-sm border card">
+          Cover Image:
+          <input type="text" [(ngModel)]="book.cover" name="cover"> Title:
+          <input type="text" class="border border-dark mx-auto" [(ngModel)]="book.title" name="title" required>
+          <span class="mx-auto">by</span>
+          <div class="card-text mx-auto" *ngFor="let a of book.authors">
+            <app-author [author]="a"></app-author>
+            <button class="btn btn-sm btn-danger" (click)="removeAuthor(a)">x</button>
+          </div>
+          <select ngModel (ngModelChange)="addAuthor($event)" name="authors">
+            <option *ngFor="let auth of authorList" [ngValue]="auth">{{auth.first + ' ' + auth.last}}</option>
+          </select>
+        </div>
+        <div class="col-sm">
+          <div class="row">
+            <div class="col">
+              <h5>ISBN:</h5>
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="book.isbn10" name="isbn10">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>ISBN13:</h5>
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="book.isbn13" name="isbn13">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Price:</h5>
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="book.price" name="price">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <h5>Stock:</h5>
+            </div>
+            <div class="col">
+              <input type="text" [(ngModel)]="book.stock" name="stock">
+            </div>
+          </div>
+          <br>
+          <h5>Genres:</h5>
+          <ul *ngIf="book.genres">
+            <li *ngFor="let g of book.genres">{{g.genre}}
+              <button class="btn btn-sm btn-danger" (click)="removeGenre(g)">x</button>
+            </li>
+          </ul>
+          <select ngModel (ngModelChange)="addGenre($event)" name="genres">
+            <option *ngFor="let g of genreList" [ngValue]="g">{{g.genre}}</option>
+          </select>
+        </div>
+        <button class="btn btn-primary" (click)="submit()">Submit</button>
+      </div>
+    </form>
+  </div>
