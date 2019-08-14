@@ -1,0 +1,38 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/home">
+        <span class="badge-primary">{{title}}</span>
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li  class="nav-item">
+                <a *ngIf="route.url!=='/books'" class="nav-link" routerLink="/books">
+                  Books
+                </a>
+                <span *ngIf="route.url==='/books'" class="nav-link font-weight-bold">
+                  Books
+                </span>
+            </li>
+            <li *ngIf="isEmployee()" class="nav-item">
+                <a *ngIf="route.url!=='/books/edit'" class="nav-link" routerLink="/books/edit">Add Book</a>
+                <span *ngIf="route.url==='/books/edit'" class="nav-link font-weight-bold" routerLink="/books/edit">Add Book</span>
+            </li>
+            <li *ngIf="isEmployee()" class="nav-item">
+                    <a class="nav-link" routerLink="/genres">Add Genre</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/authors">Authors</a>
+            </li>
+            <li *ngIf="isEmployee()" class="nav-item">
+                <a class="nav-link" routerLink="/purch">Purchases</a>
+            </li>
+            <li *ngIf="!isEmployee()&&isCustomer()" class="nav-item">
+                <a class="nav-link" routerLink="/purch">Purchase History</a>
+            </li>
+        </ul>
+
+    <app-login></app-login>
+    </div>
+  </nav>

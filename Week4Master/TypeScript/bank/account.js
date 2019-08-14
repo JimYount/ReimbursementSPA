@@ -1,8 +1,16 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 var Account = /** @class */ (function () {
-    function Account() {
+    function Account(balance, type) {
+        this.balance = balance;
+        this.type = type;
     }
+    Account.prototype.withdraw = function (amount) {
+        this.balance = this.balance - amount;
+    };
+    Account.prototype.deposit = function (amount) {
+        this.balance = +this.balance + +amount;
+    };
     return Account;
 }());
 exports.Account = Account;
