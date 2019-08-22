@@ -16,13 +16,13 @@ CREATE TABLE Department
 CREATE TABLE Employees
 (
     EmployeeID NUMBER NOT NULL,
+    Email VARCHAR2 (120) NOT NULL,
     UserName VARCHAR2 (120) NOT NULL,
     UserPass VARCHAR2 (120) NOT NULL,
     FirstName VARCHAR2 (120) NOT NULL,
     LastName VARCHAR2 (120) NOT NULL,
     Supervisor NUMBER,
     DepartmentID NUMBER NOT NULL,
-    Email VARCHAR2 (120) NOT NULL,
     CONSTRAINT PK_EmployeeID PRIMARY KEY  (EmployeeID),
     CONSTRAINT FK_DepartmentID FOREIGN KEY (DepartmentID) REFERENCES Department(DepartmentID) ON DELETE CASCADE
 );
@@ -53,7 +53,6 @@ CREATE TABLE Submission
     Descpription VARCHAR2 (300) NOT NULL, 
     ReimAmount NUMBER NOT NULL, 
     GradeFormatID NUMBER NOT NULL, 
-    EventType VARCHAR2 (120) NOT NULL, 
     Justification VARCHAR2 (300) NOT NULL, 
     OptEvtAttach VARCHAR2 (120), 
     OptDaysMissed NUMBER,
