@@ -374,3 +374,273 @@
 2019-08-22 11:23:13 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
 2019-08-22 11:23:13 TRACE Driver:39 - 
 2019-08-22 11:23:13 TRACE Driver:41 - org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+2019-08-22 11:23:33 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:23:33 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:23:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:23:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:23:33 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:23:33 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:23:33 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:23:33 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:23:33 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:23:34 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:23:34 TRACE Driver:39 - 
+2019-08-22 12:45:38 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 12:45:38 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 12:45:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 12:45:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 12:45:38 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 12:45:38 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 12:45:38 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 12:45:38 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 12:45:38 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 12:45:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 12:45:39 TRACE Driver:35 - h.equals(h1):true
+2019-08-22 12:45:39 TRACE Driver:36 - h==h1:true
+2019-08-22 13:06:26 TRACE Driver:34 - HoneyPot [honeypotId=null, volume=23.0, honeyAmount=50.0]
+2019-08-22 13:07:09 TRACE Driver:34 - HoneyPot [honeypotId=null, volume=23.0, honeyAmount=50.0]
+2019-08-22 13:07:09 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:07:09 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:07:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:07:10 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:07:10 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:07:10 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:07:10 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:07:10 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:07:10 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:07:11 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:07:11 TRACE Driver:38 - HoneyPot [honeypotId=6, volume=23.0, honeyAmount=50.0]
+2019-08-22 13:07:43 TRACE Driver:34 - HoneyPot [honeypotId=null, volume=90.0, honeyAmount=50.0]
+2019-08-22 13:07:43 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:07:43 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:07:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:07:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:07:43 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:07:43 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:07:43 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:07:43 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:07:43 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:07:44 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:26:24 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:26:24 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:26:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:26:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:26:24 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:26:24 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:26:24 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:26:24 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:26:24 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:26:25 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:26:25 TRACE Driver:165 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:26:25 TRACE Driver:165 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:26:25 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:27:38 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:27:38 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:27:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:27:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:27:38 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:27:38 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:27:38 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:27:38 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:27:38 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:27:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:27:40 TRACE Driver:170 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:170 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:27:40 TRACE Driver:35 - b1.equals(b2): true
+2019-08-22 13:27:40 TRACE Driver:37 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=dark brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:38 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:39 - b1.equals(b2): false
+2019-08-22 13:28:57 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:28:57 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:28:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:28:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:28:57 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:28:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:28:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:28:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:28:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:28:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:28:59 TRACE Driver:175 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:175 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:28:59 TRACE Driver:35 - b1.equals(b2): true
+2019-08-22 13:28:59 TRACE Driver:37 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=dark brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:38 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:39 - b1.equals(b2): false
+2019-08-22 13:32:01 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:32:01 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:32:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:32:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:32:01 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:32:01 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:32:01 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:32:01 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:32:01 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:32:02 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:32:03 TRACE Driver:183 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:183 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:32:03 TRACE Driver:35 - b1.equals(b2): true
+2019-08-22 13:32:03 TRACE Driver:37 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=dark brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:38 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:39 - b1.equals(b2): false
+2019-08-22 13:32:03 TRACE Driver:49 - b1 to b2: false
+2019-08-22 13:32:03 TRACE Driver:50 - b2 to b3: false
+2019-08-22 13:32:03 TRACE Driver:51 - b3 to b1: true
+2019-08-22 13:35:07 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:35:07 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:35:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:35:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:35:07 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:35:07 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:35:07 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:35:07 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:35:07 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:35:08 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:35:08 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 13:35:08 TRACE Driver:42 - HoneyPot [honeypotId=3, volume=58.0, honeyAmount=54.0]
+2019-08-22 13:35:08 TRACE Driver:45 - HoneyPot [honeypotId=3, volume=58.0, honeyAmount=54.0]
+2019-08-22 13:35:32 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:35:32 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:35:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:35:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:35:32 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:35:32 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:35:32 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:35:32 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:35:32 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:35:33 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:35:33 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=58.0, honeyAmount=54.0]
+2019-08-22 13:35:33 TRACE Driver:42 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:35:33 TRACE Driver:45 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:36:56 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:36:56 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:36:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:36:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:36:56 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:36:56 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:36:56 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:36:56 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:36:56 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:36:57 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:36:57 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:36:57 TRACE Driver:43 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 13:36:57 TRACE Driver:46 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 13:37:05 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:37:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:37:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:37:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:37:06 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:37:06 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:37:06 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:37:06 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:37:06 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:37:06 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:37:07 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:37:07 TRACE Driver:43 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 13:37:07 TRACE Driver:46 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 14:04:03 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:04:03 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:04:03 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:04:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:04:03 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:04:03 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:04:03 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:04:03 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:04:03 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:04:04 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:04:05 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:04:05 TRACE Driver:51 - all bears:
+2019-08-22 14:04:05 TRACE Driver:52 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0], Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0], Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]]
+2019-08-22 14:04:05 TRACE Driver:53 - Big Blue House Bears:
+2019-08-22 14:04:05 TRACE Driver:55 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 14:04:05 TRACE Driver:55 - Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]
+2019-08-22 14:07:44 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:07:44 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:07:44 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:07:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:07:44 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:07:44 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:07:44 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:07:44 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:07:44 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:07:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:07:45 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:07:57 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:07:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:07:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:07:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:07:58 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:07:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:07:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:07:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:07:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:07:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:07:59 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:07:59 TRACE Driver:55 - all bears:
+2019-08-22 14:07:59 TRACE Driver:56 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0], Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0], Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]]
+2019-08-22 14:07:59 TRACE Driver:57 - Big Blue House Bears:
+2019-08-22 14:07:59 TRACE Driver:59 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 14:07:59 TRACE Driver:59 - Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]
+2019-08-22 14:07:59 TRACE Driver:71 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 14:13:58 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:13:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:13:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:13:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:13:59 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:13:59 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:13:59 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:13:59 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:13:59 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:13:59 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:14:00 TRACE Driver:45 - HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0]
+2019-08-22 14:17:56 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:17:56 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:17:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:17:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:17:56 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:17:56 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:17:56 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:17:56 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:17:56 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:17:57 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:17:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:17:58 TRACE Driver:58 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0], Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0], Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]]
+2019-08-22 14:18:49 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:18:49 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:18:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:18:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:18:49 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:18:49 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:18:49 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:18:49 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:18:49 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:18:49 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:18:50 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:18:50 TRACE Driver:58 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]]
+2019-08-22 14:21:59 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:21:59 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:21:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:21:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:21:59 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:21:59 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:21:59 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:21:59 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:21:59 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:22:00 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:22:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:22:00 TRACE Driver:49 - [HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0], HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0]]
+2019-08-22 14:22:40 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:22:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:22:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:22:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:22:41 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:22:41 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:22:41 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:22:41 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:22:41 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:22:41 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:22:42 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:22:42 TRACE Driver:49 - [HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0], HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0]]
+2019-08-22 14:22:42 TRACE Driver:53 - [HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]]

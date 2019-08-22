@@ -5,8 +5,15 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+@NamedQueries({
+	@NamedQuery(name="getAllHoneypots", query="FROM HoneyPot"),
+	@NamedQuery(name="getAllHoneypotsWithHoney", query="from HoneyPot where honeyAmount > :amount")
+})
 
 @Entity // Tells Hibernate that this class is a "managed entity" and should be mapped to the database
 @Table(name="honey_pot") // Tells Hibernate what table should be mapped to the class
