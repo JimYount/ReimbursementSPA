@@ -37,11 +37,12 @@ public class CustomerServiceOracle implements CustomerService {
 	@Override
 	public Customer getCustomerById(int i) {
 		Customer cust = new Customer(i);
-		cust = (Customer) ud.getUser(cust);
+		cust = (Customer) ud.getUserById(cust);
 		if(cust.getId()==0) {
 			log.trace("No customer found");
 			return null;
 		}
+		cust = cd.getCustomer(cust);
 		cust.setAddress(addrdao.getAddress(cust.getAddress().getId()));
 		cust.setReadingList(bs.getBooksForReadingList(cust));
 		return cust;

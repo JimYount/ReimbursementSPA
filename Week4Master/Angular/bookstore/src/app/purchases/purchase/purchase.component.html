@@ -1,1 +1,25 @@
-<p>purchase works!</p>
+<div class="border" *ngIf="purchase">
+    Purchase ID: <a [routerLink]="['/purch/', purchase.id]">{{purchase.id}}</a>
+    <p>Customer: {{ purchase.cust.first +" " + purchase.cust.last }}</p>
+    <p>Status: {{ purchase.status }}</p>
+    <table class="table">
+      <tr>
+        <th>Title</th>
+        <th>Quantity</th>
+        <th *ngIf="isOpen()">+/-</th>
+      </tr>
+      <tr *ngFor="let i of purchase.invoiceLines">
+        <td>
+          <a [routerLink]="['/books/', i.book.id]">{{ i.book.title }}</a>
+        </td>
+        <td>{{i.quantity}}</td>
+        <td *ngIf="isOpen()">
+          <button class="btn-sml btn-primary" (click)="add(i.book)">+</button>
+          <button class="btn-sml btn-danger" (click)="sub(i.book)">-</button>
+        </td>
+      </tr>
+      <p>Total: {{ purchase.total | currency:'USD':'symbol'}}
+    </table>
+    <button class="btn btn-primary" *ngIf="isOpen()" (click)="makePurchase()">Purchase</button>
+    <button class="btn btn-danger" *ngIf="isOpen()" (click)="emptyCart()">Cancel</button>
+  </div>

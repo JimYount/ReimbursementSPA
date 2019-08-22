@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hibernate-mapping>
+	<class name="com.revature.beans.HoneyPot" table="honey_pot">
+		<id name="honeypotId" column="honeypot_id">
+			<generator class="increment"/>
+		</id>
+		<property name="volume" column="volume"></property>
+		<property name="honeyAmount" column="honeyamount"></property>
+	</class>
+</hibernate-mapping>

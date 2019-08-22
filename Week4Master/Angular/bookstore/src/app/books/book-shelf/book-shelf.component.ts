@@ -9,6 +9,7 @@ import { BookService } from '../shared/book.service';
 })
 export class BookShelfComponent implements OnInit {
   books: Book[];
+  searchText: string;
   constructor(private bookService: BookService) { }
 
   ngOnInit() {

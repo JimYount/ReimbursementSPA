@@ -48,7 +48,7 @@
         <ul>
           <li *ngFor="let g of book.genres">{{g.genre}}</li>
         </ul>
-        <!-- <button *ngIf="isCustomer()" class="btn btn-primary" (click)="addToCart()">Add to Cart</button> -->
+        <button *ngIf="isCustomer()" class="btn btn-primary" (click)="addToCart()">Add to Cart</button>
         <button *ngIf="isEmployee()" class="btn btn-danger" (click)="editBook()">Edit Book</button>
       </div>
     </div>

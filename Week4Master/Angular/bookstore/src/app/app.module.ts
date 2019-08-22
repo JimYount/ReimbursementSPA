@@ -21,6 +21,8 @@ import { UserService } from './shared/user/user.service';
 import { HomeComponent } from './home/home.component';
 import { PurchaseComponent } from './purchases/purchase/purchase.component';
 import { CartComponent } from './purchases/cart/cart.component';
+import { BookPipe } from './book.pipe';
+import { PurchaseService } from './purchases/shared/purchase.service';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { CartComponent } from './purchases/cart/cart.component';
     NavBarComponent,
     HomeComponent,
     PurchaseComponent,
-    CartComponent
+    CartComponent,
+    BookPipe
   ],
   imports: [
     BrowserModule,
@@ -48,7 +51,8 @@ import { CartComponent } from './purchases/cart/cart.component';
     AuthorService,
     GenreService,
     UrlService,
-    UserService
+    UserService,
+    PurchaseService
   ],
   bootstrap: [AppComponent]
 })
