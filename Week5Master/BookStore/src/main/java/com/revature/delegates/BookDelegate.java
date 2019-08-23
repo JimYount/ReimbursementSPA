@@ -14,14 +14,14 @@ import org.apache.log4j.Logger;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Book;
 import com.revature.services.BookService;
-import com.revature.services.BookServiceOracle;
+import com.revature.services.hibernate.BookServiceHibernate;
 import com.revature.utils.JsonParseUtil;
 import com.revature.utils.LogUtil;
 
 public class BookDelegate implements FrontControllerDelegate {
 	private Logger log = Logger.getLogger(BookDelegate.class);
 	private ObjectMapper om = new ObjectMapper();
-	private BookService bs = new BookServiceOracle();
+	private BookService bs = new BookServiceHibernate();
 	
 	@Override
 	public void process(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

@@ -1,4 +1,4 @@
-package com.revature.services;
+package com.revature.services.jdbc;
 
 import java.util.Set;
 
@@ -12,6 +12,8 @@ import com.revature.data.UserDAO;
 import com.revature.data.oracle.AddressOracle;
 import com.revature.data.oracle.CustomerOracle;
 import com.revature.data.oracle.UserOracle;
+import com.revature.services.BookService;
+import com.revature.services.CustomerService;
 
 public class CustomerServiceOracle implements CustomerService {
 	private Logger log = Logger.getLogger(CustomerServiceOracle.class);

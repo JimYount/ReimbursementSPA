@@ -20,14 +20,14 @@ import com.revature.beans.Employee;
 import com.revature.beans.InvoiceLine;
 import com.revature.beans.Purchase;
 import com.revature.services.BookService;
-import com.revature.services.BookServiceOracle;
 import com.revature.services.PurchaseService;
-import com.revature.services.PurchaseServiceOracle;
+import com.revature.services.hibernate.BookServiceHibernate;
+import com.revature.services.hibernate.PurchaseServiceHibernate;
 
 public class PurchaseDelegate implements FrontControllerDelegate {
 	private Logger log = Logger.getLogger(PurchaseDelegate.class);
-	private BookService bs = new BookServiceOracle();
-	private PurchaseService ps = new PurchaseServiceOracle();
+	private BookService bs = new BookServiceHibernate();
+	private PurchaseService ps = new PurchaseServiceHibernate();
 	private ObjectMapper om = new ObjectMapper();
 
 	@Override

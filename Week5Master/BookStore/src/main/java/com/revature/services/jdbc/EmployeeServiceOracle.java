@@ -1,4 +1,4 @@
-package com.revature.services;
+package com.revature.services.jdbc;
 
 import java.util.Set;
 
@@ -10,6 +10,7 @@ import com.revature.data.EmployeeDAO;
 import com.revature.data.UserDAO;
 import com.revature.data.oracle.EmployeeOracle;
 import com.revature.data.oracle.UserOracle;
+import com.revature.services.EmployeeService;
 
 public class EmployeeServiceOracle implements EmployeeService {
 	private Logger log = Logger.getLogger(EmployeeServiceOracle.class);

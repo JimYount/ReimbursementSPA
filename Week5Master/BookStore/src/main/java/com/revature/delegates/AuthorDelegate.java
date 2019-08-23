@@ -14,12 +14,12 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Author;
 import com.revature.services.AuthorService;
-import com.revature.services.AuthorServiceOracle;
+import com.revature.services.hibernate.AuthorServiceHibernate;
 import com.revature.utils.JsonParseUtil;
 
 public class AuthorDelegate implements FrontControllerDelegate {
 	private Logger log = Logger.getLogger(AuthorDelegate.class);
-	private AuthorService as = new AuthorServiceOracle();
+	private AuthorService as = new AuthorServiceHibernate();
 	private ObjectMapper om = new ObjectMapper();
 	
 	@Override

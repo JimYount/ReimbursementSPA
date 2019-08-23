@@ -1,4 +1,4 @@
-package com.revature.services;
+package com.revature.services.jdbc;
 
 import java.util.Set;
 
@@ -10,6 +10,9 @@ import com.revature.beans.InvoiceLine;
 import com.revature.beans.Purchase;
 import com.revature.data.PurchaseDAO;
 import com.revature.data.oracle.PurchaseOracle;
+import com.revature.services.BookService;
+import com.revature.services.CustomerService;
+import com.revature.services.PurchaseService;
 
 public class PurchaseServiceOracle implements PurchaseService {
 	private PurchaseDAO pd = new PurchaseOracle();

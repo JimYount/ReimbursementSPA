@@ -1,4 +1,4 @@
-package com.revature.services;
+package com.revature.services.jdbc;
 
 import java.util.Set;
 
@@ -12,6 +12,7 @@ import com.revature.data.GenreDAO;
 import com.revature.data.oracle.AuthorOracle;
 import com.revature.data.oracle.BookOracle;
 import com.revature.data.oracle.GenreOracle;
+import com.revature.services.BookService;
 
 public class BookServiceOracle implements BookService {
 	private BookDAO bd = new BookOracle();

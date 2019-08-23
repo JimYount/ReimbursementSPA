@@ -8,16 +8,15 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.revature.beans.Genre;
 import com.revature.services.GenreService;
-import com.revature.services.GenreServiceOracle;
+import com.revature.services.hibernate.GenreServiceHibernate;
 import com.revature.utils.JsonParseUtil;
 
 public class GenreDelegate implements FrontControllerDelegate {
 	private Logger log = Logger.getLogger(GenreDelegate.class);
-	private GenreService gs = new GenreServiceOracle();
+	private GenreService gs = new GenreServiceHibernate();
 	private ObjectMapper om = new ObjectMapper();
 	@Override
 	public void process(HttpServletRequest req, HttpServletResponse resp) throws IOException, ServletException {

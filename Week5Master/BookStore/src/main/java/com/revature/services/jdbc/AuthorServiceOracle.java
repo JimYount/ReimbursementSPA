@@ -1,4 +1,4 @@
-package com.revature.services;
+package com.revature.services.jdbc;
 
 import java.util.Set;
 
@@ -7,6 +7,7 @@ import org.apache.log4j.Logger;
 import com.revature.beans.Author;
 import com.revature.data.AuthorDAO;
 import com.revature.data.oracle.AuthorOracle;
+import com.revature.services.AuthorService;
 
 public class AuthorServiceOracle implements AuthorService {
 	private Logger log = Logger.getLogger(AuthorServiceOracle.class);
