@@ -9,9 +9,31 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
+import javax.persistence.NamedStoredProcedureQueries;
+import javax.persistence.NamedStoredProcedureQuery;
 import javax.persistence.OneToMany;
+import javax.persistence.ParameterMode;
 import javax.persistence.SequenceGenerator;
+import javax.persistence.StoredProcedureParameter;
 import javax.persistence.Table;
+
+@NamedStoredProcedureQueries({
+	@NamedStoredProcedureQuery(name="addBook", procedureName="add_book_to_cart", parameters = {
+			@StoredProcedureParameter(type=Integer.class, mode=ParameterMode.IN),
+			@StoredProcedureParameter(type=Integer.class, mode=ParameterMode.IN),
+			@StoredProcedureParameter(type=Double.class, mode=ParameterMode.OUT),
+			@StoredProcedureParameter(type=void.class, mode=ParameterMode.REF_CURSOR)
+	}),
+	@NamedStoredProcedureQuery(name="removeBook", procedureName="remove_book_from_cart", parameters = {
+			@StoredProcedureParameter(type=Integer.class, mode=ParameterMode.IN),
+			@StoredProcedureParameter(type=Integer.class, mode=ParameterMode.IN),
+			@StoredProcedureParameter(type=Double.class, mode=ParameterMode.OUT),
+			@StoredProcedureParameter(type=void.class, mode=ParameterMode.REF_CURSOR)
+	}),
+	@NamedStoredProcedureQuery(name="emptyBook", procedureName="empty_cart", parameters = {
+			@StoredProcedureParameter(type=Integer.class, mode=ParameterMode.IN)
+	}),
+})
 
 @Entity
 @Table(name = "purchase")

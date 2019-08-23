@@ -7,11 +7,11 @@ import com.revature.beans.Book;
 import com.revature.beans.Customer;
 import com.revature.beans.Genre;
 import com.revature.data.AuthorDAO;
-import com.revature.data.AuthorOracle;
 import com.revature.data.BookDAO;
-import com.revature.data.BookOracle;
 import com.revature.data.GenreDAO;
-import com.revature.data.GenreOracle;
+import com.revature.data.oracle.AuthorOracle;
+import com.revature.data.oracle.BookOracle;
+import com.revature.data.oracle.GenreOracle;
 
 public class BookServiceOracle implements BookService {
 	private BookDAO bd = new BookOracle();

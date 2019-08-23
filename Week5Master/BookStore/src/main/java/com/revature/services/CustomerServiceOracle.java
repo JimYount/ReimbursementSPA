@@ -7,11 +7,11 @@ import org.apache.log4j.Logger;
 import com.revature.beans.Customer;
 import com.revature.beans.User;
 import com.revature.data.AddressDAO;
-import com.revature.data.AddressOracle;
 import com.revature.data.CustomerDAO;
-import com.revature.data.CustomerOracle;
 import com.revature.data.UserDAO;
-import com.revature.data.UserOracle;
+import com.revature.data.oracle.AddressOracle;
+import com.revature.data.oracle.CustomerOracle;
+import com.revature.data.oracle.UserOracle;
 
 public class CustomerServiceOracle implements CustomerService {
 	private Logger log = Logger.getLogger(CustomerServiceOracle.class);

@@ -1,4 +1,4 @@
-package com.revature.data;
+package com.revature.data.oracle;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -12,6 +12,7 @@ import org.apache.log4j.Logger;
 import com.revature.beans.Address;
 import com.revature.beans.Book;
 import com.revature.beans.Customer;
+import com.revature.data.CustomerDAO;
 import com.revature.utils.ConnectionUtil;
 import com.revature.utils.LogUtil;
 

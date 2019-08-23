@@ -5,7 +5,7 @@ import java.sql.SQLException;
 
 import org.apache.log4j.Logger;
 
-import com.revature.data.GenreOracle;
+import com.revature.data.oracle.GenreOracle;
 
 public class LogUtil {
 	// modularizing the logging of exceptions.

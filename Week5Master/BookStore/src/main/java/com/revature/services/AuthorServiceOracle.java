@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 import com.revature.beans.Author;
 import com.revature.data.AuthorDAO;
-import com.revature.data.AuthorOracle;
+import com.revature.data.oracle.AuthorOracle;
 
 public class AuthorServiceOracle implements AuthorService {
 	private Logger log = Logger.getLogger(AuthorServiceOracle.class);

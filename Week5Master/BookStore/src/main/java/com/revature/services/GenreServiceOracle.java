@@ -6,7 +6,7 @@ import org.apache.log4j.Logger;
 
 import com.revature.beans.Genre;
 import com.revature.data.GenreDAO;
-import com.revature.data.GenreOracle;
+import com.revature.data.oracle.GenreOracle;
 
 public class GenreServiceOracle implements GenreService {
 	private Logger log = Logger.getLogger(GenreServiceOracle.class);

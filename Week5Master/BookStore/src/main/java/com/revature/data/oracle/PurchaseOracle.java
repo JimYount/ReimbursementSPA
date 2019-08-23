@@ -1,4 +1,4 @@
-package com.revature.data;
+package com.revature.data.oracle;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
@@ -14,6 +14,7 @@ import com.revature.beans.Book;
 import com.revature.beans.Customer;
 import com.revature.beans.InvoiceLine;
 import com.revature.beans.Purchase;
+import com.revature.data.PurchaseDAO;
 import com.revature.utils.ConnectionUtil;
 import com.revature.utils.LogUtil;
 

@@ -9,7 +9,7 @@ import com.revature.beans.Customer;
 import com.revature.beans.InvoiceLine;
 import com.revature.beans.Purchase;
 import com.revature.data.PurchaseDAO;
-import com.revature.data.PurchaseOracle;
+import com.revature.data.oracle.PurchaseOracle;
 
 public class PurchaseServiceOracle implements PurchaseService {
 	private PurchaseDAO pd = new PurchaseOracle();

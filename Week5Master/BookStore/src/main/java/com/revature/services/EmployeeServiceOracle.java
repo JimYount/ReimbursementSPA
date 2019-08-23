@@ -7,9 +7,9 @@ import org.apache.log4j.Logger;
 import com.revature.beans.Employee;
 import com.revature.beans.User;
 import com.revature.data.EmployeeDAO;
-import com.revature.data.EmployeeOracle;
 import com.revature.data.UserDAO;
-import com.revature.data.UserOracle;
+import com.revature.data.oracle.EmployeeOracle;
+import com.revature.data.oracle.UserOracle;
 
 public class EmployeeServiceOracle implements EmployeeService {
 	private Logger log = Logger.getLogger(EmployeeServiceOracle.class);
