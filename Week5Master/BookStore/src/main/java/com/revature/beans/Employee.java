@@ -1,7 +1,19 @@
 package com.revature.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="emp")
+@PrimaryKeyJoinColumn(name="id")
 public class Employee extends User{
 	private String title;
+	@ManyToOne(fetch=FetchType.EAGER)
+	@JoinColumn(name="sup_id")
 	private Employee supervisor;
 	public Employee() {
 		super();

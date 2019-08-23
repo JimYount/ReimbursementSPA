@@ -49,5 +49,10 @@
 			<artifactId>jackson-databind</artifactId>
 			<version>2.9.3</version>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>5.2.12.Final</version>
+		</dependency>
 	</dependencies>
 </project>

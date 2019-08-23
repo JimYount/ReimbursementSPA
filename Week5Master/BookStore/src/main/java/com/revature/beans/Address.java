@@ -1,6 +1,18 @@
 package com.revature.beans;
 
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Address {
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="address")
+	@SequenceGenerator(name="address", sequenceName="address_seq", allocationSize=1)
 	private Integer id;
 	private String lineOne;
 	private String lineTwo;

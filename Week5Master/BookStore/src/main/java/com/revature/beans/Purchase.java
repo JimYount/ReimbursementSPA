@@ -2,11 +2,30 @@ package com.revature.beans;
 
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
+import javax.persistence.OneToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table(name = "purchase")
 public class Purchase {
+	@Id
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "purchase")
+	@SequenceGenerator(name = "purchase", sequenceName = "purchase_seq", allocationSize = 1)
 	private Integer id;
+	@ManyToOne(fetch = FetchType.EAGER)
+	@JoinColumn(name = "customer_id")
 	private Customer cust;
 	private double total;
 	private String status;
+	@OneToMany(fetch = FetchType.EAGER, mappedBy = "purchase")
 	private Set<InvoiceLine> invoiceLines;
 	public Purchase() {
 		super();

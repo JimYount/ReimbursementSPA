@@ -2,15 +2,39 @@ package com.revature.beans;
 
 import java.util.Set;
 
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Book {
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="book")
+	@SequenceGenerator(name="book", sequenceName="book_seq", allocationSize=1)
 	private Integer id;
 	private String title;
 	private String isbn10;
 	private String isbn13;
+	@ManyToMany(fetch=FetchType.EAGER)
+	@JoinTable(name="book_author",
+			joinColumns=@JoinColumn(name="book_id"),
+			inverseJoinColumns=@JoinColumn(name="author_id"))
 	private Set<Author> authors;
 	private Double price;
 	private Integer stock;
 	private String cover;
+	@ManyToMany(fetch=FetchType.EAGER)
+	@JoinTable(name="book_genre",
+			joinColumns=@JoinColumn(name="book_id"),
+			inverseJoinColumns=@JoinColumn(name="genre_id"))
 	private Set<Genre> genres;
 	public Book() {
 		super();

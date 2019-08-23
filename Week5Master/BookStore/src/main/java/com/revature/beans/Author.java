@@ -1,9 +1,25 @@
 package com.revature.beans;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
+import javax.persistence.Table;
+
+@Entity
+@Table
 public class Author {
+	@Id
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="author")
+	@SequenceGenerator(name="author", sequenceName="author_seq", allocationSize=1)
 	private Integer id;
+	@Column(name="firstname")
 	private String first;
+	@Column(name="lastname")
 	private String last;
+	@Column(name="aboutblurb")
 	private String about;
 	public Author() {
 		super();
