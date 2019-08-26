@@ -10,8 +10,14 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.apache.log4j.Logger;
 
+import com.revature.delegates.AcceptDelegate;
+import com.revature.delegates.CommentDelegate;
 import com.revature.delegates.FrontControllerDelegate;
 import com.revature.delegates.LoginDelegate;
+import com.revature.delegates.ManageDelegate;
+import com.revature.delegates.RejectDelegate;
+import com.revature.delegates.SubmitDelegate;
+import com.revature.delegates.ViewDelegate;
 
 public class RequestDispatcher {
 	private Logger log = Logger.getLogger(RequestDispatcher.class);
@@ -19,23 +25,17 @@ public class RequestDispatcher {
 	private Map<String, FrontControllerDelegate> delegateMap;
 	{
 		delegateMap = new HashMap<String, FrontControllerDelegate>();
-//		delegateMap.put("books", new BookDelegate());
-//		delegateMap.put("genres", new GenreDelegate());
-//		delegateMap.put("authors", new AuthorDelegate());
+		delegateMap.put("submit", new SubmitDelegate());
+		delegateMap.put("view", new ViewDelegate());
 		delegateMap.put("login", new LoginDelegate());
-//		delegateMap.put("purchases", new PurchaseDelegate());
+		delegateMap.put("manage", new ManageDelegate());
+		delegateMap.put("accept", new AcceptDelegate());
+		delegateMap.put("reject", new RejectDelegate());
+		delegateMap.put("comment", new CommentDelegate());
 		delegateMap.put("loginPage", 
 			(req, resp) -> {
 				req.getRequestDispatcher("/static/login.html").forward(req,resp);
 			});
-//		delegateMap.put("addBook", 
-//			(req, resp) -> {
-//				req.getRequestDispatcher("/static/addbook.html").forward(req,resp);
-//			});
-//		delegateMap.put("editBook", 
-//			(req, resp) -> {
-//				req.getRequestDispatcher("/static/editbook.html").forward(req,resp);
-//			});
 	}
 	// The RequestDispatcher/RequestMapper/HandleMapper/RequestHelper
 	// serves as a factory for delegates/controllers

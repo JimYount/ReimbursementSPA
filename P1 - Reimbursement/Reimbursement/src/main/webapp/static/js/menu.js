@@ -1,18 +1,16 @@
 var menuString = `
-
-            <div class="vertical-menu">
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
-                <br>
+    <table style="width: 100%; height: 100%; margin: auto">
+        <tr>
+            <td class="vertical-menu" valign="top">
                 <a onclick="showSubmissions()">My Reimbursements</a>
                 <a onclick="showSubmitForm()">Submit a Claim</a>
                 <a onclick="manageSubmissions()">Manage Claims</a>
-            </div>
-            <div id="interactive-menu">
-            </div>
+            </td>
+            <td id="interactive-menu" valign="top">
+                
+            </td>
+        </tr>
+    </table>
         `;
 
 function showMenu() {

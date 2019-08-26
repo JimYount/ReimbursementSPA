@@ -18,7 +18,7 @@ var authenticated = `
         </td>
     </tr>
 </table>`;
-var loginString = `<br> <br> <br> <br>
+var loginString = `
 <h1 style="text-align: center">Login</h1>
 <br> <br>
 <div class="formgroup" style="width: 15%; margin: auto">
@@ -39,7 +39,7 @@ var customer = null;
 var baseURL = "/Reimbursement/";
 
 window.onload=()=>{
-    addNavBar();
+    //addNavBar();
     showLogin();
 }
 
@@ -54,9 +54,7 @@ function showLogin(){
     document.getElementById("mainContent").innerHTML=loginString;
 
     // add event listeners
-    document.getElementById("submitbtn").addEventListener("click", authenticate);
     document.getElementById("password").onkeydown=checkPasswordEnter;
-    authenticate();
 }
 function checkPasswordEnter(){
     if(event.which===13)
@@ -75,7 +73,7 @@ function authenticate(){
         if(xhttp.readyState===4 && xhttp.status===200) {
             //console.log(xhttp.responseText);
             var data = JSON.parse(xhttp.responseText);
-            console.log(data);
+            //console.log(data);
 
             employee = data.employee;
             
@@ -95,6 +93,10 @@ function authenticate(){
     }
 }
 
+function getEmployeeID(){
+    return employee.employeeID;
+}
+
 function logout(){
 	console.log("logging out");
 	var xhttp=new XMLHttpRequest();
@@ -104,6 +106,8 @@ function logout(){
 	
 	function finish(){
 		if(xhttp.readyState===4){
+            resetLastNum();
+            resetLastNumMan();
 			document.getElementById("authent").innerHTML=unauthenticated;
 			let btns = document.getElementsByClassName("emp-btn");
 			for(let i = 0; i<btns.length; i++){

@@ -43,7 +43,7 @@ public class LoginDelegate implements FrontControllerDelegate {
 		}
 	}
 
-	public void checkLogin(HttpServletRequest req, HttpServletResponse resp) throws IOException, SQLException {
+	public void checkLogin(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		log.trace("Logging in!");
 		HttpSession session = req.getSession();
 

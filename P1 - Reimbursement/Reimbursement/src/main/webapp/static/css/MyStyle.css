@@ -3,6 +3,13 @@ body {
 	background-color: #600000
 }
 
+.dot {
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
 .btn-primary {
 	color: #fff;
 	background-color: #8000ff;
@@ -11,12 +18,12 @@ body {
 
 .btn-primary:hover {
 	color: #fff;
-	background-color: #0069d9;
-	border-color: #0062cc
+	background-color: #00cbd9;
+	border-color: #00cbd9
 }
 
 .btn-primary.focus, .btn-primary:focus {
-	box-shadow: 0 0 0 .2rem rgba(38, 143, 255, .5)
+	box-shadow: 0 0 0 .2rem rgba(0, 180, 69, 0.5)
 }
 
 .btn-primary.disabled, .btn-primary:disabled {
@@ -42,9 +49,17 @@ body {
     height: 100%;
 }
 
+.submission-box {
+    border: white;
+}
+
+.submission-box td:hover {
+    background-color: rgb(255, 255, 255);
+    color: #600000;
+}
+
 .vertical-menu {
     width: 400px;
-    height: 1000px;
     color: black;
 }
   

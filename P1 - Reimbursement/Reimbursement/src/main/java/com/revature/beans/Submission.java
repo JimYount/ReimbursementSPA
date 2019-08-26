@@ -1,23 +1,37 @@
 package com.revature.beans;
 
-import java.sql.Date;
-
 public class Submission {
 	private int submissionID; 
 	private int employeeID;
 	private int eventTypeID;
-	private Date submitDate; 
-    private String locale; 
-    private String descpription;
+	private String eventDate; 
+    private String eventCountry; 
+    private String eventState; 
+    private String eventCity; 
+    private String description;
     private double reimAmount; 
-    private int gradeFormatID; 
+    private double gradePresNum; 
     private String justification; 
     private String optEvtAttach; 
     private int optDaysMissed;
     private int status;
     private boolean passed;
-    private Date apprSubDate;
-    
+    private String apprSubDate;
+    private int assignedHR;
+	private String rejectReason;
+	
+    public String getRejectReason() {
+		return rejectReason;
+	}
+	public void setRejectReason(String rejectReason) {
+		this.rejectReason = rejectReason;
+	}
+	public int getAssignedHR() {
+		return assignedHR;
+	}
+	public void setAssignedHR(int assignedHR) {
+		this.assignedHR = assignedHR;
+	}
 	public int getSubmissionID() {
 		return submissionID;
 	}
@@ -36,23 +50,35 @@ public class Submission {
 	public void setEventTypeID(int eventTypeID) {
 		this.eventTypeID = eventTypeID;
 	}
-	public Date getSubmitDate() {
-		return submitDate;
+	public String getEventDate() {
+		return eventDate;
 	}
-	public void setSubmitDate(Date submitDate) {
-		this.submitDate = submitDate;
+	public void setEventDate(String eventDate) {
+		this.eventDate = eventDate;
 	}
-	public String getLocale() {
-		return locale;
+	public String getEventCountry() {
+		return eventCountry;
 	}
-	public void setLocale(String locale) {
-		this.locale = locale;
+	public void setEventCountry(String eventCountry) {
+		this.eventCountry = eventCountry;
 	}
-	public String getDescpription() {
-		return descpription;
+	public String getEventState() {
+		return eventState;
 	}
-	public void setDescpription(String descpription) {
-		this.descpription = descpription;
+	public void setEventState(String eventState) {
+		this.eventState = eventState;
+	}
+	public String getEventCity() {
+		return eventCity;
+	}
+	public void setEventCity(String eventCity) {
+		this.eventCity = eventCity;
+	}
+	public String getDescription() {
+		return description;
+	}
+	public void setDescription(String description) {
+		this.description = description;
 	}
 	public double getReimAmount() {
 		return reimAmount;
@@ -60,11 +86,11 @@ public class Submission {
 	public void setReimAmount(double reimAmount) {
 		this.reimAmount = reimAmount;
 	}
-	public int getGradeFormatID() {
-		return gradeFormatID;
+	public double getGradePresNum() {
+		return gradePresNum;
 	}
-	public void setGradeFormatID(int gradeFormatID) {
-		this.gradeFormatID = gradeFormatID;
+	public void setGradePresNum(double gradePresNum) {
+		this.gradePresNum = gradePresNum;
 	}
 	public String getJustification() {
 		return justification;
@@ -96,10 +122,10 @@ public class Submission {
 	public void setPassed(boolean passed) {
 		this.passed = passed;
 	}
-	public Date getApprSubDate() {
+	public String getApprSubDate() {
 		return apprSubDate;
 	}
-	public void setApprSubDate(Date apprSubDate) {
+	public void setApprSubDate(String apprSubDate) {
 		this.apprSubDate = apprSubDate;
 	}
 }

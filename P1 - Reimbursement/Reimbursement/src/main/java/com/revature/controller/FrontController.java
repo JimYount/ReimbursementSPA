@@ -13,6 +13,10 @@ import org.apache.log4j.Logger;
 import com.revature.delegates.FrontControllerDelegate;
 
 public class FrontController extends DefaultServlet {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Logger log = Logger.getLogger(FrontController.class);
 	private RequestDispatcher rd = new RequestDispatcher();
 
@@ -39,13 +43,13 @@ public class FrontController extends DefaultServlet {
 			}
 		}
 	}
+	
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException, ServletException {
 		try {
 			process(req, resp);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -55,7 +59,6 @@ public class FrontController extends DefaultServlet {
 		try {
 			process(req, resp);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -66,7 +69,6 @@ public class FrontController extends DefaultServlet {
 		try {
 			process(req, resp);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -76,7 +78,6 @@ public class FrontController extends DefaultServlet {
 		try {
 			process(req, resp);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
@@ -86,7 +87,6 @@ public class FrontController extends DefaultServlet {
 		try {
 			process(req, resp);
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}

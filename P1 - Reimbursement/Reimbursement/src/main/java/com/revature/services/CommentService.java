@@ -1,7 +1,7 @@
-package com.revature.data;
+package com.revature.services;
 
 import com.revature.beans.Comment;
 
-public interface CommentDAO {
+public interface CommentService {
 	public void requestComment(Comment comment);
 }
