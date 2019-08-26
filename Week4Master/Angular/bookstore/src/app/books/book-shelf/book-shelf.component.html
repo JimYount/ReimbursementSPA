@@ -1,1 +1,3 @@
-<app-book *ngFor="let b of books" [book]="b"></app-book>
+Search: <input type="text" [(ngModel)]="searchText">
+
+<app-book *ngFor="let b of books | book:searchText" [book]="b"></app-book>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration SYSTEM "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.connection.driver_class">oracle.jdbc.OracleDriver</property>
+		<property name="hibernate.connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+		<property name="hibernate.connection.username">bookapp</property>
+		<property name="hibernate.connection.password">p4ssw0rd</property>
+		
+		<property name="hibernate.dialect">org.hibernate.dialect.Oracle10gDialect</property>
+		
+		<!-- We can some hibernate specific things -->
+		<property name="show_sql">true</property>
+		<property name="hibernate.format_sql">true</property>
+		<property name="use_sql_comments">true</property>
+		
+		<!-- Backwards compatibility for id generation -->
+		<property name="hibernate.id.new_generator_mappings">false</property>
+		
+		<!-- Mappings -->
+		<mapping class="com.revature.beans.Address"/>
+		<mapping class="com.revature.beans.Author"/>
+		<mapping class="com.revature.beans.Book"/>
+		<mapping class="com.revature.beans.Customer"/>
+		<mapping class="com.revature.beans.Employee"/>
+		<mapping class="com.revature.beans.Genre"/>
+		<mapping class="com.revature.beans.InvoiceLine"/>
+		<mapping class="com.revature.beans.Purchase"/>
+		<mapping class="com.revature.beans.User"/>
+	</session-factory>
+</hibernate-configuration>

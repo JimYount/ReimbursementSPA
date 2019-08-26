@@ -1,0 +1,646 @@
+2019-08-22 10:05:12 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:05:12 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cfg.beanvalidation.BeanValidationIntegrator].
+2019-08-22 10:05:12 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.secure.spi.JaccIntegrator].
+2019-08-22 10:05:12 DEBUG IntegratorServiceImpl:46 - Adding Integrator [org.hibernate.cache.internal.CollectionCacheInvalidator].
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Cache71] -> [org.hibernate.dialect.Cache71Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [CUBRID] -> [org.hibernate.dialect.CUBRIDDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2] -> [org.hibernate.dialect.DB2Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390] -> [org.hibernate.dialect.DB2390Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2390V8] -> [org.hibernate.dialect.DB2390V8Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DB2400] -> [org.hibernate.dialect.DB2400Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenFive] -> [org.hibernate.dialect.DerbyTenFiveDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSix] -> [org.hibernate.dialect.DerbyTenSixDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [DerbyTenSeven] -> [org.hibernate.dialect.DerbyTenSevenDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Firebird] -> [org.hibernate.dialect.FirebirdDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [FrontBase] -> [org.hibernate.dialect.FrontBaseDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [H2] -> [org.hibernate.dialect.H2Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANAColumnStore] -> [org.hibernate.dialect.HANAColumnStoreDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HANARowStore] -> [org.hibernate.dialect.HANARowStoreDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [HSQL] -> [org.hibernate.dialect.HSQLDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Informix] -> [org.hibernate.dialect.InformixDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres] -> [org.hibernate.dialect.IngresDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres9] -> [org.hibernate.dialect.Ingres9Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Ingres10] -> [org.hibernate.dialect.Ingres10Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Interbase] -> [org.hibernate.dialect.InterbaseDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [JDataStore] -> [org.hibernate.dialect.JDataStoreDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Mckoi] -> [org.hibernate.dialect.MckoiDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MimerSQL] -> [org.hibernate.dialect.MimerSQLDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5] -> [org.hibernate.dialect.MySQL5Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL5InnoDB] -> [org.hibernate.dialect.MySQL5InnoDBDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57InnoDB] -> [org.hibernate.dialect.MySQL57InnoDBDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [MySQL57] -> [org.hibernate.dialect.MySQL57Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle8i] -> [org.hibernate.dialect.Oracle8iDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle9i] -> [org.hibernate.dialect.Oracle9iDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Oracle10g] -> [org.hibernate.dialect.Oracle10gDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Pointbase] -> [org.hibernate.dialect.PointbaseDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgresPlus] -> [org.hibernate.dialect.PostgresPlusDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL81] -> [org.hibernate.dialect.PostgreSQL81Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL82] -> [org.hibernate.dialect.PostgreSQL82Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [PostgreSQL9] -> [org.hibernate.dialect.PostgreSQL9Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Progress] -> [org.hibernate.dialect.ProgressDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SAPDB] -> [org.hibernate.dialect.SAPDBDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer] -> [org.hibernate.dialect.SQLServerDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2005] -> [org.hibernate.dialect.SQLServer2005Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SQLServer2008] -> [org.hibernate.dialect.SQLServer2008Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Sybase11] -> [org.hibernate.dialect.Sybase11Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseAnywhere] -> [org.hibernate.dialect.SybaseAnywhereDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE15] -> [org.hibernate.dialect.SybaseASE15Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [SybaseASE157] -> [org.hibernate.dialect.SybaseASE157Dialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [Teradata] -> [org.hibernate.dialect.TeradataDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.dialect.Dialect] : [TimesTen] -> [org.hibernate.dialect.TimesTenDialect]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Borland] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BorlandEnterpriseServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BorlandEnterpriseServerJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Bitronix] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.BitronixJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.BitronixJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossAppServerJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossAppServerJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JBossTS] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JBossStandAloneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JBossStandAloneJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOnAS] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOnASJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOnASJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JOTM] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JOTMJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JOTMJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [JRun4] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.JRun4JtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.JRun4JtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [OC4J] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OC4JJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OC4JJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Orion] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.OrionJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.OrionJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Resin] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.ResinJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.ResinJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SapNetWeaver] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SapNetWeaverJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SapNetWeaverJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [SunOne] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.SunOneJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.SunOneJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [Weblogic] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WeblogicJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WeblogicJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphere] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [WebSphereExtended] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.engine.transaction.jta.platform.spi.JtaPlatform] : [org.hibernate.service.jta.platform.internal.WebSphereExtendedJtaPlatform] -> [org.hibernate.engine.transaction.jta.platform.internal.WebSphereExtendedJtaPlatform]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jdbc] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [jta] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JDBCTransactionFactory] -> [org.hibernate.resource.transaction.backend.jdbc.internal.JdbcResourceLocalTransactionCoordinatorBuilderImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.JTATransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.resource.transaction.spi.TransactionCoordinatorBuilder] : [org.hibernate.transaction.CMTTransactionFactory] -> [org.hibernate.resource.transaction.backend.jta.internal.JtaTransactionCoordinatorBuilderImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [persistent] -> [org.hibernate.hql.spi.id.persistent.PersistentTableBulkIdStrategy]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [global_temporary] -> [org.hibernate.hql.spi.id.global.GlobalTemporaryTableBulkIdStrategy]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.hql.spi.id.MultiTableBulkIdStrategy] : [local_temporary] -> [org.hibernate.hql.spi.id.local.LocalTemporaryTableBulkIdStrategy]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [disallow] -> [org.hibernate.event.internal.EntityCopyNotAllowedObserver]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [allow] -> [org.hibernate.event.internal.EntityCopyAllowedObserver]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.event.spi.EntityCopyObserver] : [log] -> [org.hibernate.event.internal.EntityCopyAllowedLoggedObserver]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [default] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-jpa] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [legacy-hbm] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyHbmImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.boot.model.naming.ImplicitNamingStrategy] : [component-path] -> [org.hibernate.boot.model.naming.ImplicitNamingStrategyComponentPathImpl]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [default] -> [org.hibernate.cache.internal.DefaultCacheKeysFactory]
+2019-08-22 10:05:12 TRACE StrategySelectorImpl:66 - Registering named strategy selector [org.hibernate.cache.spi.CacheKeysFactory] : [simple] -> [org.hibernate.cache.internal.SimpleCacheKeysFactory]
+2019-08-22 10:05:12 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:05:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:05:12 TRACE ClassLoaderServiceImpl:393 - trying via [new URL("hibernate.cfg.xml")]
+2019-08-22 10:05:12 TRACE ClassLoaderServiceImpl:400 - trying via [ClassLoader.getResourceAsStream("hibernate.cfg.xml")]
+2019-08-22 10:05:12 TRACE LocalXmlResourceResolver:35 - In resolveEntity(null, http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd, null, null)
+2019-08-22 10:05:12 DEBUG LocalXmlResourceResolver:57 - Interpreting public/system identifier : [null] - [http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd]
+2019-08-22 10:05:12 DEBUG LocalXmlResourceResolver:85 - Recognized hibernate-configuration identifier; attempting to resolve on classpath under org/hibernate/
+2019-08-22 10:05:12 DEBUG JaxbCfgProcessor:116 - cfg.xml document did not define namespaces; wrapping in custom event reader to introduce namespace information
+2019-08-22 10:05:12 DEBUG ServiceBinding:68 - Overriding existing service binding [org.hibernate.secure.spi.JaccService]
+2019-08-22 10:05:12 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.config.spi.ConfigurationService]
+2019-08-22 10:05:12 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.cache.spi.RegionFactory]
+2019-08-22 10:05:12 DEBUG RegionFactoryInitiator:75 - Cache region factory : org.hibernate.cache.internal.NoCachingRegionFactory
+2019-08-22 10:05:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:05:12 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.boot.cfgxml.spi.CfgXmlAccessService]
+2019-08-22 10:05:12 TRACE XmlMappingBinderAccess:51 - reading mappings from resource : HoneyPot.hbm.xml
+2019-08-22 10:05:12 DEBUG MappingBinder:58 - Performing JAXB binding of hbm.xml document : Origin(name=HoneyPot.hbm.xml,type=RESOURCE)
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@63a12c68
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration boolean -> org.hibernate.type.BooleanType@63a12c68
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Boolean -> org.hibernate.type.BooleanType@63a12c68
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration numeric_boolean -> org.hibernate.type.NumericBooleanType@6d4e5011
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration true_false -> org.hibernate.type.TrueFalseType@fa49800
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration yes_no -> org.hibernate.type.YesNoType@16a0ee18
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@156b88f5
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration byte -> org.hibernate.type.ByteType@156b88f5
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Byte -> org.hibernate.type.ByteType@156b88f5
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration character -> org.hibernate.type.CharacterType@4d465b11
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration char -> org.hibernate.type.CharacterType@4d465b11
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Character -> org.hibernate.type.CharacterType@4d465b11
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@73e22a3d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration short -> org.hibernate.type.ShortType@73e22a3d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Short -> org.hibernate.type.ShortType@73e22a3d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration integer -> org.hibernate.type.IntegerType@7fee8714
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration int -> org.hibernate.type.IntegerType@7fee8714
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Integer -> org.hibernate.type.IntegerType@7fee8714
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@35aea049
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration long -> org.hibernate.type.LongType@35aea049
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Long -> org.hibernate.type.LongType@35aea049
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@48f278eb
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration float -> org.hibernate.type.FloatType@48f278eb
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Float -> org.hibernate.type.FloatType@48f278eb
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@614ca7df
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration double -> org.hibernate.type.DoubleType@614ca7df
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Double -> org.hibernate.type.DoubleType@614ca7df
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration big_decimal -> org.hibernate.type.BigDecimalType@f5acb9d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigDecimal -> org.hibernate.type.BigDecimalType@f5acb9d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration big_integer -> org.hibernate.type.BigIntegerType@2c35e847
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.math.BigInteger -> org.hibernate.type.BigIntegerType@2c35e847
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration string -> org.hibernate.type.StringType@74751b3
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.String -> org.hibernate.type.StringType@74751b3
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration nstring -> org.hibernate.type.StringNVarcharType@4f2b503c
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration ncharacter -> org.hibernate.type.CharacterNCharType@6392827e
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration url -> org.hibernate.type.UrlType@c88a337
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.net.URL -> org.hibernate.type.UrlType@c88a337
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration Duration -> org.hibernate.type.DurationType@593aaf41
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Duration -> org.hibernate.type.DurationType@593aaf41
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration Instant -> org.hibernate.type.InstantType@21282ed8
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.Instant -> org.hibernate.type.InstantType@21282ed8
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDateTime -> org.hibernate.type.LocalDateTimeType@1e1a0406
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDateTime -> org.hibernate.type.LocalDateTimeType@1e1a0406
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration LocalDate -> org.hibernate.type.LocalDateType@71a8adcf
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalDate -> org.hibernate.type.LocalDateType@71a8adcf
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration LocalTime -> org.hibernate.type.LocalTimeType@61001b64
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.LocalTime -> org.hibernate.type.LocalTimeType@61001b64
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4b8ee4de
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetDateTime -> org.hibernate.type.OffsetDateTimeType@4b8ee4de
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration OffsetTime -> org.hibernate.type.OffsetTimeType@4659191b
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.OffsetTime -> org.hibernate.type.OffsetTimeType@4659191b
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@53aac487
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.time.ZonedDateTime -> org.hibernate.type.ZonedDateTimeType@53aac487
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration date -> org.hibernate.type.DateType@771a660
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Date -> org.hibernate.type.DateType@771a660
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration time -> org.hibernate.type.TimeType@942a29c
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Time -> org.hibernate.type.TimeType@942a29c
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration timestamp -> org.hibernate.type.TimestampType@60bd273d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Timestamp -> org.hibernate.type.TimestampType@60bd273d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Date -> org.hibernate.type.TimestampType@60bd273d
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration dbtimestamp -> org.hibernate.type.DbTimestampType@5e600dd5
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration calendar -> org.hibernate.type.CalendarType@4d5650ae
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Calendar -> org.hibernate.type.CalendarType@4d5650ae
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.GregorianCalendar -> org.hibernate.type.CalendarType@4d5650ae
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration calendar_date -> org.hibernate.type.CalendarDateType@51c668e3
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration locale -> org.hibernate.type.LocaleType@4a883b15
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Locale -> org.hibernate.type.LocaleType@4a883b15
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration currency -> org.hibernate.type.CurrencyType@5677323c
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.Currency -> org.hibernate.type.CurrencyType@5677323c
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration timezone -> org.hibernate.type.TimeZoneType@4686afc2
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.TimeZone -> org.hibernate.type.TimeZoneType@4686afc2
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration class -> org.hibernate.type.ClassType@f09733f
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Class -> org.hibernate.type.ClassType@f09733f
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-binary -> org.hibernate.type.UUIDBinaryType@6c1a5b54
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.util.UUID -> org.hibernate.type.UUIDBinaryType@6c1a5b54
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration uuid-char -> org.hibernate.type.UUIDCharType@20140db9
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration binary -> org.hibernate.type.BinaryType@55a147cc
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration byte[] -> org.hibernate.type.BinaryType@55a147cc
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration [B -> org.hibernate.type.BinaryType@55a147cc
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-binary -> org.hibernate.type.WrapperBinaryType@4145bad8
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration Byte[] -> org.hibernate.type.WrapperBinaryType@4145bad8
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Byte; -> org.hibernate.type.WrapperBinaryType@4145bad8
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration row_version -> org.hibernate.type.RowVersionType@750e2b97
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration image -> org.hibernate.type.ImageType@2a7f1f10
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration characters -> org.hibernate.type.CharArrayType@f78a47e
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration char[] -> org.hibernate.type.CharArrayType@f78a47e
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration [C -> org.hibernate.type.CharArrayType@f78a47e
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration wrapper-characters -> org.hibernate.type.CharacterArrayType@6d4d66d2
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration [Ljava.lang.Character; -> org.hibernate.type.CharacterArrayType@6d4d66d2
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration Character[] -> org.hibernate.type.CharacterArrayType@6d4d66d2
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration text -> org.hibernate.type.TextType@76a4ebf2
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration ntext -> org.hibernate.type.NTextType@5b1669c0
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration blob -> org.hibernate.type.BlobType@3e27ba32
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Blob -> org.hibernate.type.BlobType@3e27ba32
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_blob -> org.hibernate.type.MaterializedBlobType@202b0582
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration clob -> org.hibernate.type.ClobType@742ff096
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.Clob -> org.hibernate.type.ClobType@742ff096
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration nclob -> org.hibernate.type.NClobType@72cc7e6f
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.sql.NClob -> org.hibernate.type.NClobType@72cc7e6f
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_clob -> org.hibernate.type.MaterializedClobType@909217e
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration materialized_nclob -> org.hibernate.type.MaterializedNClobType@8458f04
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration serializable -> org.hibernate.type.SerializableType@5b218417
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration object -> org.hibernate.type.ObjectType@6fa51cd4
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration java.lang.Object -> org.hibernate.type.ObjectType@6fa51cd4
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_date -> org.hibernate.type.AdaptedImmutableType@5386659f
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_time -> org.hibernate.type.AdaptedImmutableType@14028087
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_timestamp -> org.hibernate.type.AdaptedImmutableType@cecf639
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_dbtimestamp -> org.hibernate.type.AdaptedImmutableType@1caa0244
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar -> org.hibernate.type.AdaptedImmutableType@7ce026d3
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_calendar_date -> org.hibernate.type.AdaptedImmutableType@7ce69770
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_binary -> org.hibernate.type.AdaptedImmutableType@1750fbeb
+2019-08-22 10:05:13 DEBUG BasicTypeRegistry:145 - Adding type registration imm_serializable -> org.hibernate.type.AdaptedImmutableType@5b247367
+2019-08-22 10:05:13 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.spi.JdbcServices]
+2019-08-22 10:05:13 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.env.spi.JdbcEnvironment]
+2019-08-22 10:05:13 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectFactory]
+2019-08-22 10:05:13 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.dialect.spi.DialectResolver]
+2019-08-22 10:05:13 TRACE AbstractServiceRegistryImpl:229 - Initializing service [role=org.hibernate.engine.jdbc.connections.spi.ConnectionProvider]
+2019-08-22 10:05:13 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:06:06 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:06:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:06:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:06:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:06:07 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:07:03 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:07:03 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:07:03 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:07:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:07:04 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:07:04 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 10:07:04 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 10:07:04 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 10:07:04 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 10:07:04 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 10:07:05 TRACE Driver:22 - HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0]
+2019-08-22 10:14:52 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:14:52 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:14:52 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:14:52 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:14:52 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:14:52 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 10:14:52 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 10:14:52 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 10:14:52 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 10:14:53 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 10:14:53 TRACE Driver:25 - HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0]
+2019-08-22 10:34:47 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:34:48 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:34:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:34:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:34:48 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:34:48 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 10:34:48 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 10:34:48 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 10:34:48 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 10:34:48 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 10:34:49 TRACE Driver:34 - HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0]
+2019-08-22 10:34:49 TRACE Driver:25 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 10:39:42 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:39:42 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:39:42 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:39:42 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:39:42 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:39:42 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 10:39:42 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 10:39:42 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 10:39:42 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 10:39:42 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 10:39:43 TRACE Driver:57 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 10:47:49 TRACE Driver:54 - Bear [bearId=null, cave=Cave [caveId=null, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=null, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=null, cave=Cave [caveId=null, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=null, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 10:48:46 TRACE Driver:54 - Bear [bearId=null, cave=Cave [caveId=null, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=null, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=null, cave=Cave [caveId=null, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=null, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 10:48:46 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 10:48:47 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 10:48:47 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 10:48:47 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 10:48:47 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 10:48:47 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 10:48:47 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 10:48:47 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 10:48:47 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 10:48:47 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 10:48:48 TRACE Driver:69 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 11:15:57 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:15:57 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:15:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:15:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:15:57 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:15:57 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:15:57 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:15:57 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:15:57 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:15:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:15:58 TRACE Driver:28 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 11:17:07 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:17:07 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:17:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:17:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:17:07 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:17:07 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:17:07 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:17:07 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:17:07 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:17:08 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:17:08 TRACE Driver:28 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 11:17:08 TRACE Driver:30 - org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+2019-08-22 11:17:36 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:17:36 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:17:36 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:17:37 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:17:37 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:17:37 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:17:37 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:17:37 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:17:37 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:17:37 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:17:38 TRACE Driver:28 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 11:17:38 TRACE Driver:30 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 11:19:40 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:19:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:19:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:19:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:19:40 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:19:40 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:19:40 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:19:40 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:19:40 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:19:41 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:19:41 TRACE Driver:28 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 11:19:41 TRACE Driver:30 - org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+2019-08-22 11:22:21 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:22:21 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:22:21 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:22:21 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:22:21 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:22:21 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:22:21 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:22:21 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:22:21 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:22:22 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:22:22 TRACE Driver:32 - [Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]]
+2019-08-22 11:22:48 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:22:48 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:22:48 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:22:48 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:22:48 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:22:48 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:22:48 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:22:48 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:22:48 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:22:49 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:22:49 TRACE Driver:33 - org.hibernate.LazyInitializationException: failed to lazily initialize a collection of role: com.revature.beans.Cave.residents, could not initialize proxy - no Session
+2019-08-22 11:23:12 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:23:12 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:23:12 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:23:12 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:23:12 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:23:12 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:23:12 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:23:12 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:23:12 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:23:13 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:23:13 TRACE Driver:39 - 
+2019-08-22 11:23:13 TRACE Driver:41 - org.hibernate.LazyInitializationException: could not initialize proxy - no Session
+2019-08-22 11:23:33 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 11:23:33 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 11:23:33 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 11:23:33 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 11:23:33 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 11:23:33 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 11:23:33 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 11:23:33 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 11:23:33 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 11:23:34 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 11:23:34 TRACE Driver:39 - 
+2019-08-22 12:45:38 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 12:45:38 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 12:45:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 12:45:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 12:45:38 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 12:45:38 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 12:45:38 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 12:45:38 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 12:45:38 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 12:45:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 12:45:39 TRACE Driver:35 - h.equals(h1):true
+2019-08-22 12:45:39 TRACE Driver:36 - h==h1:true
+2019-08-22 13:06:26 TRACE Driver:34 - HoneyPot [honeypotId=null, volume=23.0, honeyAmount=50.0]
+2019-08-22 13:07:09 TRACE Driver:34 - HoneyPot [honeypotId=null, volume=23.0, honeyAmount=50.0]
+2019-08-22 13:07:09 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:07:09 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:07:09 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:07:10 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:07:10 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:07:10 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:07:10 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:07:10 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:07:10 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:07:11 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:07:11 TRACE Driver:38 - HoneyPot [honeypotId=6, volume=23.0, honeyAmount=50.0]
+2019-08-22 13:07:43 TRACE Driver:34 - HoneyPot [honeypotId=null, volume=90.0, honeyAmount=50.0]
+2019-08-22 13:07:43 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:07:43 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:07:43 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:07:43 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:07:43 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:07:43 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:07:43 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:07:43 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:07:43 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:07:44 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:26:24 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:26:24 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:26:24 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:26:24 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:26:24 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:26:24 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:26:24 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:26:24 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:26:24 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:26:25 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:26:25 TRACE Driver:165 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:26:25 TRACE Driver:165 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:26:25 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:27:38 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:27:38 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:27:38 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:27:38 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:27:38 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:27:38 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:27:38 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:27:38 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:27:38 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:27:39 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:27:40 TRACE Driver:170 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:170 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:27:40 TRACE Driver:35 - b1.equals(b2): true
+2019-08-22 13:27:40 TRACE Driver:37 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=dark brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:38 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:27:40 TRACE Driver:39 - b1.equals(b2): false
+2019-08-22 13:28:57 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:28:57 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:28:57 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:28:57 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:28:57 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:28:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:28:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:28:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:28:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:28:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:28:59 TRACE Driver:175 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:175 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:28:59 TRACE Driver:35 - b1.equals(b2): true
+2019-08-22 13:28:59 TRACE Driver:37 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=dark brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:38 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:28:59 TRACE Driver:39 - b1.equals(b2): false
+2019-08-22 13:32:01 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:32:01 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:32:01 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:32:01 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:32:01 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:32:01 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:32:01 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:32:01 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:32:01 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:32:02 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:32:03 TRACE Driver:183 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:183 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:34 - b1==b2: false
+2019-08-22 13:32:03 TRACE Driver:35 - b1.equals(b2): true
+2019-08-22 13:32:03 TRACE Driver:37 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=dark brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:38 - Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]
+2019-08-22 13:32:03 TRACE Driver:39 - b1.equals(b2): false
+2019-08-22 13:32:03 TRACE Driver:49 - b1 to b2: false
+2019-08-22 13:32:03 TRACE Driver:50 - b2 to b3: false
+2019-08-22 13:32:03 TRACE Driver:51 - b3 to b1: true
+2019-08-22 13:35:07 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:35:07 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:35:07 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:35:07 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:35:07 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:35:07 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:35:07 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:35:07 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:35:07 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:35:08 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:35:08 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=60.0, honeyAmount=54.0]
+2019-08-22 13:35:08 TRACE Driver:42 - HoneyPot [honeypotId=3, volume=58.0, honeyAmount=54.0]
+2019-08-22 13:35:08 TRACE Driver:45 - HoneyPot [honeypotId=3, volume=58.0, honeyAmount=54.0]
+2019-08-22 13:35:32 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:35:32 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:35:32 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:35:32 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:35:32 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:35:32 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:35:32 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:35:32 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:35:32 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:35:33 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:35:33 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=58.0, honeyAmount=54.0]
+2019-08-22 13:35:33 TRACE Driver:42 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:35:33 TRACE Driver:45 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:36:56 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:36:56 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:36:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:36:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:36:56 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:36:56 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:36:56 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:36:56 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:36:56 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:36:57 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:36:57 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:36:57 TRACE Driver:43 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 13:36:57 TRACE Driver:46 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 13:37:05 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 13:37:06 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 13:37:06 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 13:37:06 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 13:37:06 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 13:37:06 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 13:37:06 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 13:37:06 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 13:37:06 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 13:37:06 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 13:37:07 TRACE Driver:39 - HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]
+2019-08-22 13:37:07 TRACE Driver:43 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 13:37:07 TRACE Driver:46 - HoneyPot [honeypotId=3, volume=54.0, honeyAmount=54.0]
+2019-08-22 14:04:03 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:04:03 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:04:03 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:04:03 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:04:03 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:04:03 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:04:03 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:04:03 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:04:03 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:04:04 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:04:05 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:04:05 TRACE Driver:51 - all bears:
+2019-08-22 14:04:05 TRACE Driver:52 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0], Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0], Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]]
+2019-08-22 14:04:05 TRACE Driver:53 - Big Blue House Bears:
+2019-08-22 14:04:05 TRACE Driver:55 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 14:04:05 TRACE Driver:55 - Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]
+2019-08-22 14:07:44 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:07:44 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:07:44 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:07:44 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:07:44 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:07:44 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:07:44 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:07:44 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:07:44 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:07:45 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:07:45 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:07:57 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:07:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:07:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:07:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:07:58 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:07:58 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:07:58 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:07:58 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:07:58 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:07:58 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:07:59 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:07:59 TRACE Driver:55 - all bears:
+2019-08-22 14:07:59 TRACE Driver:56 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0], Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0], Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]]
+2019-08-22 14:07:59 TRACE Driver:57 - Big Blue House Bears:
+2019-08-22 14:07:59 TRACE Driver:59 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 14:07:59 TRACE Driver:59 - Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]
+2019-08-22 14:07:59 TRACE Driver:71 - Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0]
+2019-08-22 14:13:58 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:13:58 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:13:58 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:13:58 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:13:59 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:13:59 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:13:59 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:13:59 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:13:59 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:13:59 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:14:00 TRACE Driver:45 - HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0]
+2019-08-22 14:17:56 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:17:56 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:17:56 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:17:56 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:17:56 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:17:56 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:17:56 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:17:56 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:17:56 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:17:57 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:17:57 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:17:58 TRACE Driver:58 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0], Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0], Bear [bearId=3, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], bearCubs=[Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]], bearColor=brown, breed=Grizzly, name=Bear, weight=500.0, height=8.0], Bear [bearId=4, cave=Cave [caveId=2, squareFootage=3000.0, caveType=House, caveName=Big Blue House], honeyPot=HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Ojo, weight=200.0, height=3.0]]
+2019-08-22 14:18:49 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:18:49 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:18:49 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:18:49 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:18:49 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:18:49 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:18:49 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:18:49 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:18:49 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:18:49 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:18:50 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:18:50 TRACE Driver:58 - [Bear [bearId=1, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], bearCubs=[Bear [bearId=2, cave=Cave [caveId=1, squareFootage=200.0, caveType=rock, caveName=JellyStone Cave], honeyPot=HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], bearCubs=[], bearColor=brown, breed=grizzly, name=Booboo, weight=70.0, height=3.0]], bearColor=brown, breed=grizzly, name=Yogi, weight=200.0, height=6.0]]
+2019-08-22 14:21:59 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:21:59 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:21:59 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:21:59 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:21:59 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:21:59 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:21:59 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:21:59 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:21:59 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:22:00 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:22:00 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:22:00 TRACE Driver:49 - [HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0], HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0]]
+2019-08-22 14:22:40 DEBUG logging:109 - Logging Provider: org.jboss.logging.Log4jLoggerProvider
+2019-08-22 14:22:40 INFO  Version:45 - HHH000412: Hibernate Core {5.2.12.Final}
+2019-08-22 14:22:40 INFO  Environment:213 - HHH000206: hibernate.properties not found
+2019-08-22 14:22:40 INFO  Version:66 - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2019-08-22 14:22:41 WARN  pooling:70 - HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+2019-08-22 14:22:41 INFO  pooling:126 - HHH10001005: using driver [oracle.jdbc.OracleDriver] at URL [jdbc:oracle:thin:@localhost:1521:xe]
+2019-08-22 14:22:41 INFO  pooling:135 - HHH10001001: Connection properties: {user=bear, password=****}
+2019-08-22 14:22:41 INFO  pooling:140 - HHH10001003: Autocommit mode: false
+2019-08-22 14:22:41 INFO  DriverManagerConnectionProviderImpl:41 - HHH000115: Hibernate connection pool size: 20 (min=1)
+2019-08-22 14:22:41 INFO  Dialect:157 - HHH000400: Using dialect: org.hibernate.dialect.Oracle10gDialect
+2019-08-22 14:22:42 INFO  QueryTranslatorFactoryInitiator:47 - HHH000397: Using ASTQueryTranslatorFactory
+2019-08-22 14:22:42 TRACE Driver:49 - [HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0], HoneyPot [honeypotId=4, volume=100.0, honeyAmount=50.0], HoneyPot [honeypotId=5, volume=80.0, honeyAmount=50.0]]
+2019-08-22 14:22:42 TRACE Driver:53 - [HoneyPot [honeypotId=1, volume=706.0, honeyAmount=607.0], HoneyPot [honeypotId=2, volume=300.0, honeyAmount=150.0], HoneyPot [honeypotId=3, volume=56.0, honeyAmount=54.0]]

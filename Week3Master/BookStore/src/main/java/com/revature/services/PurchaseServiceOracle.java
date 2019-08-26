@@ -45,6 +45,7 @@ public class PurchaseServiceOracle implements PurchaseService {
 		
 		//eagerly fetch customer information
 		p.setCust(cs.getCustomerById(p.getCust().getId()));
+		log.debug(p);
 		return p;
 	}
 	@Override
@@ -62,6 +63,7 @@ public class PurchaseServiceOracle implements PurchaseService {
 				
 		//eagerly fetch customer information
 		p.setCust(cs.getCustomerById(p.getCust().getId()));
+		log.debug(p);
 		return p;
 	}
 	@Override
