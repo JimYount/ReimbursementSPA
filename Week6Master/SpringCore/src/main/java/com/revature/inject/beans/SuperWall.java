@@ -1,23 +1,19 @@
-package com.revature.beans;
+package com.revature.inject.beans;
 
-import org.springframework.stereotype.Component;
-
-//@Component
-public class WallImpl implements Wall{
+public class SuperWall implements Wall{
 	private String material;
-	public WallImpl() {
+	public SuperWall() {
 		super();
-		System.out.println("WallImpl()");
 	}
-	public WallImpl(String material) {
+	public SuperWall(String material) {
 		super();
-		this.material = material;
+		this.material = "SUPER"+material;
 	}
 	public String getMaterial() {
 		return material;
 	}
 	public void setMaterial(String material) {
-		this.material = material;
+		this.material = "AWESOME"+material;
 	}
 	@Override
 	public int hashCode() {
@@ -34,7 +30,7 @@ public class WallImpl implements Wall{
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		WallImpl other = (WallImpl) obj;
+		SuperWall other = (SuperWall) obj;
 		if (material == null) {
 			if (other.material != null)
 				return false;
@@ -44,6 +40,6 @@ public class WallImpl implements Wall{
 	}
 	@Override
 	public String toString() {
-		return "WallImpl [material=" + material + "]";
+		return "SuperWall [material=" + material + "]";
 	}
 }

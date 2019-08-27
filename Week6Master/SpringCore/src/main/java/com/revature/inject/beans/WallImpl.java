@@ -1,8 +1,8 @@
-package com.revature.beans;
+package com.revature.inject.beans;
 
-import org.springframework.stereotype.Component;
+import javax.inject.Named;
 
-//@Component
+@Named("injectWall")
 public class WallImpl implements Wall{
 	private String material;
 	public WallImpl() {

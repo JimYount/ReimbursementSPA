@@ -16,7 +16,13 @@ public class DependencyInjectionExample {
 
 		// noInjection();
 		//withInjection();
-		annotations();
+		//annotations();
+		inject();
+	}
+
+	private static void inject() {
+		com.revature.inject.beans.House h1 = (com.revature.inject.beans.House)ac.getBean("injectHouse");
+		System.out.println(h1);
 	}
 
 	private static void annotations() {
