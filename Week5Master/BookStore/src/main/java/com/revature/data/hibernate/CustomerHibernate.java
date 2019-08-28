@@ -50,7 +50,7 @@ public class CustomerHibernate implements CustomerDAO {
 			Query<Customer> q = s.createQuery(query, Customer.class);
 			q.setParameter("username", cust.getUsername());
 			q.setParameter("password", cust.getPassword());
-			c = q.getSingleResult();
+			c = q.uniqueResult();
 		}
 		s.close();
 		return c;

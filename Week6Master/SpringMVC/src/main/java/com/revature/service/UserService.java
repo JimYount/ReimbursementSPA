@@ -1,19 +1,16 @@
 package com.revature.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.revature.beans.User;
+import com.revature.data.UserDAO;
 
 @Service
 public class UserService {
+	@Autowired
+	private UserDAO ud;
 	public User login(String username, String password) {
-		if("bob".equals(username) && "pass".equals(password)) {
-			User u = new User();
-			u.setName("BobSteve");
-			u.setUsername("bob");
-			u.setPassword("pass");
-			return u;
-		}
-		return null;
+		return ud.getUser(username, password);
 	}
 }

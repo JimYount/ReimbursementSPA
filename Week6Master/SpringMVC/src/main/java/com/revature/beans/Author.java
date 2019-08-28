@@ -5,54 +5,30 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.Inheritance;
-import javax.persistence.InheritanceType;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="login")
-@Inheritance(strategy=InheritanceType.JOINED)
-public class User {
+@Table(name="Author")
+public class Author {
 	@Id
-	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="login")
-	@SequenceGenerator(name="login", sequenceName="login_seq", allocationSize=1)
+	@GeneratedValue(strategy=GenerationType.SEQUENCE, generator="author")
+	@SequenceGenerator(name="author", sequenceName="author_seq", allocationSize=1)
 	private Integer id;
-	private String username;
-	@Column(name="pswd")
-	private String password;
-	@Column(name="first_name")
+	@Column(name="firstname")
 	private String first;
-	@Column(name="last_name")
+	@Column(name="lastname")
 	private String last;
-	public User() {
+	@Column(name="aboutblurb")
+	private String about;
+	public Author() {
 		super();
-	}
-	public User(Integer id) {
-		this.id = id;
-	}
-	public User(Integer id, String username, String password) {
-		this.setId(id);
-		this.setUsername(username);
-		this.setPassword(password);
 	}
 	public Integer getId() {
 		return id;
 	}
 	public void setId(Integer id) {
 		this.id = id;
-	}
-	public String getUsername() {
-		return username;
-	}
-	public void setUsername(String username) {
-		this.username = username;
-	}
-	public String getPassword() {
-		return password;
-	}
-	public void setPassword(String password) {
-		this.password = password;
 	}
 	public String getFirst() {
 		return first;
@@ -66,15 +42,20 @@ public class User {
 	public void setLast(String last) {
 		this.last = last;
 	}
+	public String getAbout() {
+		return about;
+	}
+	public void setAbout(String about) {
+		this.about = about;
+	}
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
+		result = prime * result + ((about == null) ? 0 : about.hashCode());
 		result = prime * result + ((first == null) ? 0 : first.hashCode());
 		result = prime * result + ((id == null) ? 0 : id.hashCode());
 		result = prime * result + ((last == null) ? 0 : last.hashCode());
-		result = prime * result + ((password == null) ? 0 : password.hashCode());
-		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
 	@Override
@@ -85,7 +66,12 @@ public class User {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		User other = (User) obj;
+		Author other = (Author) obj;
+		if (about == null) {
+			if (other.about != null)
+				return false;
+		} else if (!about.equals(other.about))
+			return false;
 		if (first == null) {
 			if (other.first != null)
 				return false;
@@ -101,21 +87,10 @@ public class User {
 				return false;
 		} else if (!last.equals(other.last))
 			return false;
-		if (password == null) {
-			if (other.password != null)
-				return false;
-		} else if (!password.equals(other.password))
-			return false;
-		if (username == null) {
-			if (other.username != null)
-				return false;
-		} else if (!username.equals(other.username))
-			return false;
 		return true;
 	}
 	@Override
 	public String toString() {
-		return "User [id=" + id + ", username=" + username + ", password=" + password + ", first=" + first + ", last="
-				+ last + "]";
+		return "Author [id=" + id + ", first=" + first + ", last=" + last + ", about=" + about + "]";
 	}
 }

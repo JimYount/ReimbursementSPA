@@ -12,6 +12,8 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.Book;
 import com.revature.beans.Genre;
@@ -19,8 +21,10 @@ import com.revature.data.GenreDAO;
 import com.revature.utils.HibernateUtil;
 import com.revature.utils.LogUtil;
 
+@Component
 public class GenreHibernate implements GenreDAO{
-	private HibernateUtil hu = HibernateUtil.getInstance();
+	@Autowired
+	private HibernateUtil hu;
 
 	@Override
 	public Integer addGenre(Genre g) {
@@ -59,7 +63,7 @@ public class GenreHibernate implements GenreDAO{
 		query.select(root).where(critBuilder.equal(root.get("genre"), genre));
 		Query<Genre> q = s.createQuery(query);
 		s.close();
-		return q.uniqueResult();
+		return q.getSingleResult();
 	}
 
 	@Override

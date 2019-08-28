@@ -4,14 +4,18 @@ import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.query.Query;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
 import com.revature.beans.User;
 import com.revature.data.UserDAO;
 import com.revature.utils.HibernateUtil;
 import com.revature.utils.LogUtil;
 
+@Component
 public class UserHibernate implements UserDAO {
-	private HibernateUtil hu = HibernateUtil.getInstance();
+	@Autowired
+	private HibernateUtil hu;
 	@Override
 	public int addUser(User user) {
 		Session s = hu.getSession();
@@ -51,7 +55,7 @@ public class UserHibernate implements UserDAO {
 			Query<User> q = s.createQuery(query, User.class);
 			q.setParameter("username", u.getUsername());
 			q.setParameter("password", u.getPassword());
-			ret = q.uniqueResult();
+			ret = q.getSingleResult();
 		}
 		s.close();
 		return ret;
